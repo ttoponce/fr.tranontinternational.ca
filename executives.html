@@ -1,0 +1,606 @@
+<!DOCTYPE HTML>
+<html lang="fr-ca">
+    <head>
+		<title>Tranont | Dirigeants</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="shortcut icon" href="https://s3-us-west-2.amazonaws.com/cont.training/Images/201612_tranont_favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+      // Script for Google Analytics
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-84500736-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+		<style>
+    /**** BEGIN Navbar Stylings ****/
+    ul li img {
+      width: 30px;
+    }
+    .dropdown .dropdown-menu {
+        -webkit-transition: all;
+        -moz-transition: all;
+        -ms-transition: all;
+        -o-transition: all;
+        transition: all;
+
+        max-height: 0;
+        display: block;
+        overflow: hidden;
+        opacity: 0;
+    }
+    .dropdown.open .dropdown-menu {
+        max-height: 300px;
+        opacity: 1;
+        width: 285px;
+    }
+    .dropdown-header {
+      padding: 5px 10px 2px 10px;
+      font-weight: bold;
+    }
+    .dropdown-menu > li > a {
+      padding: 3px 11px;
+      color: #555555;
+      font-size: 11px;
+    }
+    .dropdown-menu .divider {
+      margin: 0;
+    }
+    .form-control {
+      border-radius: 0;
+    }
+    .join-text {
+      margin-left: 0px;
+    }
+    .nav>li>a {
+      padding: 15px 12px;
+    }
+    .navbar {
+      cursor: pointer;
+        margin-bottom: 0;
+    }
+    .navbar-default {
+      background-color: #ffffff;
+    }
+    .navbar-default .navbar-nav>.open>a, .navbar-default .navbar>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+      color: #ffffff;
+      background-color: #05538a;
+      cursor: pointer;
+    }
+    .navbar-brand {
+      padding: 10px 15px;
+    }
+    .navbar-brand img {
+      width: 125px;
+      border: none;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar-form {
+      float: right;
+      padding: 0;
+    }
+    .navbar-nav {
+      font-size: 11px;
+      letter-spacing: 2px;
+    }
+    .navbar-nav>li>.dropdown-menu {
+      padding: 0;
+    }
+    .pull-right {
+      width: 210px;
+    }
+    #associate-login {
+      color: #777777;
+      transition: color .1s;
+    }
+    #associate-login:hover {
+      color: #05538a;
+    }
+    #join-tranont {
+      color: #05538a;
+      transition: color .1s;
+    }
+    #join-tranont:hover {
+      color: #777777;
+    }
+    #join {
+      color: #05538a;
+      transition: color .1s;
+    }
+    #join:hover {
+      color: #777777;
+    }
+    @media only screen and (max-width: 1200px) {
+      .join-text {
+        margin-left: 0px;
+      }
+      .nav > li > a {
+        padding: 15px 5px;
+      }
+      .pull-right {
+        width: 123px;
+      }
+    }
+    @media only screen and (max-width: 1000px) {
+      #join {
+        display: block;
+      }
+      #join-tranont {
+        display: none;
+      }
+    }
+    @media only screen and (max-width: 991px) {
+      .join-text {
+        margin-left: 0;
+      }
+      .nav > li > a {
+        padding: 15px 2px;
+      }
+      .navbar-brand {
+        padding: 10px 5px;
+      }
+      .navbar-form {
+        width: 90px;
+      }
+      .navbar-nav {
+        letter-spacing: 1px;
+      }
+      .pull-right {
+        width: 85px;
+      }
+    }
+    @media only screen and (min-width: 992px) {
+      #join-tranont {
+        display: block;
+      }
+      #join {
+        display: none;
+      }
+    }
+    @media only screen and (max-width: 767px) {
+      .dropdown.open .dropdown-menu {
+          width: 100%;
+      }
+      .navbar-form {
+        width: auto;
+        margin: 0 15px 15px 15px;
+      }
+      .nav > li > a {
+        padding: 15px 10px;
+      }
+      .navbar-brand {
+        padding: 10px 15px;
+      }
+      .navbar-nav {
+        letter-spacing: 2px;
+      }
+      .pull-right {
+        width: auto;
+      }
+      #join-tranont {
+        display: block;
+      }
+      #join {
+        display: none;
+      }
+    }
+    /**** END Navbar Stylings ****/
+
+      /**** BEGIN Main Page Stylings ****/
+      a {
+        cursor: pointer;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+      a:focus {
+        text-decoration: none;
+      }
+      body {
+        font-family: "Helvetica Neue", "Gill Sans", sans-serif;
+      }
+      p {
+        text-transform: uppercase;
+      }
+      .bottom-row {
+        margin-bottom: 2.5%;
+      }
+      .col-xs-4 {
+        padding: 0;
+      }
+      .col-xs-4 h4 {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 20px;
+      }
+      .col-xs-12 {
+        padding: 0;
+      }
+      .exec-bio {
+        text-transform: uppercase;
+      }
+      .exec-bio h4 {
+        letter-spacing: 3px;
+        font-size: 24px;
+        margin-top: 0;
+      }
+      .exec-bio h6 {
+        letter-spacing: 2px;
+        font-size: 16px;
+      }
+      .exec-bio p {
+        letter-spacing: 1px;
+        font-size: 14px;
+      }
+      .exec-img {
+        text-align: center;
+      }
+      .exec-row {
+        margin-top: 3%;
+      }
+      .hr-top {
+        border-color: #888888;
+        margin-top: 5%;
+        width: 80%;
+      }
+      .hr-bottom {
+        border-color: #888888;
+        width: 80%;
+      }
+      .top-img {
+        width: 100%;
+        z-index: -1;
+      }
+      .top-img-header {
+        color: #ffffff;
+        position: absolute;
+        letter-spacing: 15px;
+        text-transform: uppercase;
+        font-size: 48px;
+        width: 100%;
+        margin-top: 14%;
+        text-align: center;
+      }
+      .top-img-text {
+        color: #ffffff;
+        position: absolute;
+        text-transform: uppercase;
+        letter-spacing: 8px !important;
+        font-weight: 200;
+        font-size: 21px;
+        width: 100%;
+        margin-top: 21%;
+        text-align: center;
+      }
+      @media only screen and (max-width: 992px) {
+        .exec-bio h4 {
+          font-size: 21px;
+        }
+        .exec-bio h6 {
+          font-size: 12px;
+          margin-top: -1%;
+        }
+        .exec-bio p {
+          font-size: 12px;
+        }
+        .exec-img img {
+          width: 90%;
+        }
+      }
+      @media only screen and (max-width: 700px) {
+        .col-xs-4 h4 {
+          font-size: 16px;
+        }
+      }
+      @media only screen and (max-width: 670px) {
+        .col-xs-4 h4 {
+          font-size: 14px;
+        }
+        .top-img-header {
+          font-size: 36px;
+          margin-top: 15%;
+        }
+        .top-img-text {
+          margin-top: 22.5%;
+        }
+      }
+      @media only screen and (max-width: 600px) {
+        .col-xs-4 h4 {
+          font-size: 12px;
+        }
+      }
+      @media only screen and (max-width: 535px) {
+        .exec-bio {
+          margin: 0 10px;
+        }
+        .exec-bio h4 {
+          margin-top: 3%;
+        }
+        .exec-bio p {
+          width: 95%;
+        }
+        .exec-img img {
+          width: 55%;
+        }
+        .top-img-header {
+          font-size: 25px;
+          margin-top: 17%;
+        }
+        .top-img-text {
+          font-size: 15px;
+          margin-top: 24%;
+          letter-spacing: 5px;
+        }
+      }
+      @media only screen and (max-width: 400px) {
+        .col-xs-4 h4 {
+          font-size: 12px;
+          letter-spacing: 1px;
+        }
+        .row {
+          margin-left: 0;
+          margin-right: 0;
+        }
+        .top-img-header {
+          font-size: 21px;
+          margin-top: 18%;
+          letter-spacing: 8px;
+        }
+        .top-img-text {
+          font-size: 12px;
+          margin-top: 25%;
+          letter-spacing: 4px;
+        }
+      }
+      @media only screen and (max-width: 399px) {
+        .top-img-header {
+          font-size: 18px;
+          margin-top: 20%;
+          letter-spacing: 5px;
+        }
+      }
+      /**** END Main Page Stylings ****/
+
+      /**** BEGIN Footer Stylings ****/
+      ul li a i {
+        background: #888888;
+        color: #ffffff;
+        width: 30px;
+        height: 30px;
+        border-radius: 20px;
+        font-size: 19px !important;
+        text-align: center;
+        margin-right: 10px;
+        padding-top: 23%;
+        padding-right: 1px;
+        transition: background-color .5s;
+      }
+      ul li a i:hover {
+        background-color: #05538a;
+      }
+      .footer {
+        background-color: #ffffff;
+        color: #aaaaaa;
+        border: 1px solid #cccccc;
+        padding-top: 7px;
+        padding-bottom: 1%;
+      }
+      .socialmedia-icons {
+        overflow: auto;
+        padding-left: 0;
+      }
+      .socialmedia-icons li {
+        list-style-type: none;
+        float: left;
+      }
+      @media only screen and (max-width: 992px) {
+        ul li a i {
+          width: 30px;
+          height: 30px;
+          border-radius: 25px;
+          font-size: 19px !important;
+          margin-right: 7px;
+          margin-top: 7px;
+        }
+        .footer {
+          padding-bottom: 7px;
+        }
+      }
+      @media only screen and (max-width: 713px) {
+        ul li a i {
+          margin-top: 7px;
+          padding-left: 1px;
+        }
+        .footer {
+          font-size: 11px;
+        }
+      }
+      @media only screen and (max-width: 417px) {
+        ul li a i {
+          margin-top: 4px;
+          margin-right: 4px;
+          font-size: 18px !important;
+          padding-top: 9px;
+          padding-left: 3px;
+        }
+        .footer {
+          font-size: 9px;
+          padding: 0 5px;
+        }
+        .footer .col-xs-3 {
+          padding-right: 0;
+          padding-left: 0;
+        }
+      }
+      /**** END Footer Stylings ****/
+		</style>
+
+    </head>
+    <body>
+      <!-- BEGIN Navbar -->
+      <nav class="navbar navbar-default navbar-fixed-top">
+  		  <div class="container">
+  		    <div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Navigation à bascule</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="http://tranontinternational.ca/"><img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/Tranont_Logo-horiz.jpg"/></a></div>
+          <div class="navbar-collapse collapse">
+    		    <ul class="nav navbar-nav">
+    		      <li class="dropdown"><a class="dropdown-toggle disabled" data-toggle="dropdown" href="http://fr.tranontinternational.ca/company.html">SOCIÉTÉ</a>
+                <ul class="dropdown-menu">
+    		      		<li><a href="http://fr.tranontinternational.ca/company.html#associates">ASSOCIÉS</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/company.html#foundation">FONDATION</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/company.html#investor-relations">RELATIONS AVEC LES INVESTISSEURS</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/company.html#media-kit">TROUSSE MÉDIA </a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/executives.html">DIRIGEANTS</a></li>
+      		      	<li><a href="http://fr.tranontinternational.ca/aboutus.html">À PROPOS DE NOUS</a></li>
+      		      	<li><a href="http://fr.tranontinternational.ca/company.html#supportfaq">ASSISTANCE</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/company.html#supportfaq">FOIRE AUX QUESTIONS</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/company.html#blog">BLOGUE</a></li>
+    		      	</ul>
+    		      </li>
+    		      <li class="dropdown"><a class="dropdown-toggle disabled" data-toggle="dropdown" href="http://fr.tranontinternational.ca/products.html">PRODUITS</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-header">CORE</li>
+    		      		<li><a href="http://fr.tranontinternational.ca/oneview.html">ONEVIEW</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/defend.html">DEFEND</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/taxbot.html">TAXBOT</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/legal.html">LÉGAL</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/creditservices.html">SERVICES DE CRÉDIT</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/taxservices.html">SERVICES FISCAUX</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">OUTILS COMMERCIAUX</li>
+    		      		<li><a href="http://fr.tranontinternational.ca/marketingplatform.html">PLATEFORME COMMERCIALE</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/associatecenter.html">CENTRE DES ASSOCIÉS</a></li>
+                  <li class="divider"></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/retailservices.html">SERVICES DE DÉTAIL</a></li>
+    		      	</ul>
+    		      </li>
+    		      <li class="dropdown"><a class="dropdown-toggle disabled" data-toggle="dropdown" href="http://fr.tranontinternational.ca/compensation.html">RÉMUNÉRATION</a>
+                <ul class="dropdown-menu">
+    		      		<li><a href="http://fr.tranontinternational.ca/compensation.html#comp-plan">RÉGIME DE RÉMUNÉRATION</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/compensation.html#why-tranont">POURQUOI CHOISIR TRANONT</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/compensation.html#current-promos">PROMOTIONS ACTUELLES</a></li>
+                  <li><a href="http://fr.tranontinternational.ca/retailservices.html">SERVICES DE DÉTAIL</a></li>
+    		      	</ul>
+    		      </li>
+    		      <li class="dropdown"><a class="dropdown-toggle disabled" data-toggle="dropdown" href="http://fr.tranontinternational.ca/events.html">ÉVÉNEMENTS</a>
+                <ul class="dropdown-menu">
+    		      		<li><a href="http://fr.tranontinternational.ca/events.html#national">ÉVÉNEMENTS NATIONAUX</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/events.html#international">ÉVÉNEMENTS INTERNATIONAUX</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/events.html#regional">ÉVÉNEMENTS RÉGIONAUX</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/events.html#calendar">CALENDRIER DES ÉVÉNEMENTS</a></li>
+    		      	</ul>
+    		      </li>
+              <li class="dropdown"><a class="dropdown-toggle disabled" data-toggle="dropdown"><img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/canadian-flag-small.png" alt="Drapeau canadien"/></a>
+                <ul class="dropdown-menu">
+                  <li><a href="http://tranontinternational.com/executives.html"><img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/canadian-flag-small.png" alt="Drapeau canadien"/> CA (ANGLAIS)</a></li>
+                  <li><a href="http://tranont.com/executives.html"><img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/united-states-flag.png" alt="Drapeau américain"/> É.-U.</a></li>
+                </ul>
+              </li>
+    		      <li><a class="join-text" href="https://member.tranont.com/signup"><span id="join-tranont"><strong>REJOINDRE TRANONT</strong></span><span id="join"><strong>REJOINDRE</strong></span></a></li>
+    		      <li><a href="http://members.tranont.com/login"><span id="associate-login"><strong>CONNEXION</strong></span></a></li>
+    		    </ul>
+            <div class="dropdown pull-right">
+              <form class="navbar-form" role="search">
+                <div class="input-group"><input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term"><div class="input-group-btn" id="srch-btn"><button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button></div>
+                </div>
+              </form>
+            </div>
+          </div>
+  		  </div>
+  		</nav>
+      <!-- END Navbar -->
+
+      <!-- BEGIN Main Content -->
+      <div class="container main">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2 class="top-img-header">Dirigeants</h2>
+            <h4 class="top-img-text">Principaux dirigeants d&#39;entreprise</h4><img class="top-img" src="https://s3-us-west-2.amazonaws.com/cont.training/Images/201612_Executives_topmod_01.jpg" alt="Jake Spencer, Lorne Berry, Russ Losee, Scott Bland devant un paysage urbain"/></div>
+        </div>
+        <div class="row exec-row">
+          <div class="col-xs-4 exec-img"><img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/201612_Executives_lorne_01.jpg" alt="Lorne Berry"/></div>
+          <div class="col-xs-8 exec-bio">
+            <h4><strong>Lorne Berry</strong></h4>
+            <h6><em>Fondateur et président directeur général</em></h6>
+            <p>Lorne Berry a passé 10 ans à travailler sur d&#39;importants lotissements immobiliers dans l&#39;Utah avant de créer Tranont. Plus particulièrement, il faisait partie du développement des chalets Legacy Mountain dans le cadre duquel il a aidé à transformer des milliers d&#39;acres de propriété en un projet résidentiel aménagé. Il a fait partie intégrante du processus d&#39;information des clients sur les investissements immobiliers et commerciaux. Parmi les anciens postes qu&#39;il a occupés, il est entré en partenariat avec des restaurants et a passé de nombreuses années à travailler dans des entreprises internationales pour aider les organisations à se développer sur les marchés asiatiques. Tout en travaillant dans le domaine de l&#39;éducation, de la formation et du travail avec des individus de divers horizons, M. Berry a vu un besoin sur le marché. Il a constaté que de nombreuses personnes avec lesquelles il travaillait avaient du mal à aller de l&#39;avant et à devenir financièrement indépendantes dans ce paysage financier complexe - de cette idée est née Tranont, une entreprise qui répondrait aux besoins des familles à revenus moyens et les aiderait à atteindre une viabilité financière.</p>
+            <p>M. Berry vit dans la région de Salt Lake et a deux beaux enfants. Dans son temps libre, il s&#39;adonne à plusieurs activités récréatives en plein air, dont la planche à neige, le golf et le baseball.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <hr class="hr-bottom"/>
+          </div>
+        </div>
+        <div class="row exec-row">
+          <div class="col-xs-4 exec-img"><img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/201612_Executives_scott_01.jpg" alt="Scott Bland"/></div>
+          <div class="col-xs-8 exec-bio">
+            <h4><strong>Scott Bland</strong></h4>
+            <h6><em>Président</em></h6>
+            <p>Formé sur plus de 20 ans à la création d&#39;entreprises, Scott Bland est très compétent sur le plan de l&#39;encadrement et de la formation des individus à la gestion de leurs petites entreprises à domicile. Ses domaines d&#39;expertise comprennent, sans s&#39;y limiter, le marketing, l&#39;immobilier et la gestion de placements. Avant d&#39;aider à fonder Tranont, M. Bland s&#39;est associé à une entreprise qui a réalisé plus d&#39;un milliard de dollars de ventes. Fort de son expérience personnelle dans le monde du marketing de réseau avant de fonder Tranont, M. Bland connaît très bien les difficultés qui peuvent surgir dans le cas d&#39;un associé qui essaie de créer une petite entreprise. C&#39;est pourquoi il est si enthousiaste à l&#39;égard de Tranont, car il s&#39;agit non seulement d&#39;un moyen pour les individus de développer leur activité commerciale, mais aussi d&#39;une manière de faciliter leur croissance financière en leur offrant une variété de produits qui viennent simplifier le processus. En plus de sa formation en création d&#39;entreprises, M. Bland a servi dans l&#39;armée pendant 10 ans. En tant qu&#39;époux et père de trois beaux enfants, il comprend l&#39;importance de la famille. Il comprend également que le climat économique peut peser lourdement sur les finances des familles de classe moyenne.</p>
+            <p>Lui, sa femme Susie et leurs trois enfants vivent dans la région de Salt Lake. Certains des choses qui intéressent Scott sont le sport, l&#39;exploration des grands espaces et le fait de passer du temps avec sa famille. En plus de voyager avec sa famille, une chose qui lui apporte une grande joie et qui le motive est le fait de rencontrer les associés Tranont et d&#39;en apprendre davantage sur les raisons qui les ont poussé à se lancer.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <hr class="hr-bottom"/>
+          </div>
+        </div>
+        <div class="row exec-row">
+          <div class="col-xs-4 exec-img"><img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/201612_Executives_russ_01.jpg" alt="Russ Losee"/></div>
+          <div class="col-xs-8 exec-bio">
+            <h4><strong>Russ Losee</strong></h4>
+            <h6><em>Co-fondateur et chef des opérations</em></h6>
+            <p>Russ Losee a travaillé 18 ans auprès de plusieurs startups de haute technologie dans des domaines tels que l&#39;intelligence d&#39;affaires, le filtrage de contenu, l&#39;accélération du contenu, les lignes téléphoniques de dénonciation des abus, la généalogie, la famille et les entreprises de collaboration. Avant de travailler en partenariat avec M. Berry, M. Losee a obtenu un baccalauréat en marketing et en finances internationales avec une spécialisation en études chinoises. De par sa vision internationale et son esprit d&#39;entreprise, M. Losee est un expert dans les processus d&#39;affaires liés au marketing, à la gestion des produits, aux ventes, à l&#39;ingénierie, aux finances et aux opérations générales. M. Losee supervise les opérations générales de Tranont et contribue à la collaboration de la vision des dirigeants et à la direction de l&#39;entreprise. Lorsqu&#39;on lui a demandé ce qu&#39;il préférait au sujet de Tranont, M. Losee a déclaré qu&#39;il aime offrir aux personnes une éducation financière pour les aider à découvrir les nombreux produits et services qui sont à leur portée et leur permettre d&#39;atteindre leurs objectifs dans la vie.</p>
+            <p>M. Losee est marié à Jamie depuis 19 ans et ils vivent dans le comté de l&#39;Utah avec leurs trois beaux enfants. Pour le plaisir, Russ aime se rendre aux matchs de baseball partout dans le pays. Il a assisté des matchs de baseball dans tous les stades au pays, sauf sept. Il aime également le ski nautique et la navigation de plaisance en famille.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <hr class="hr-bottom"/>
+          </div>
+        </div>
+        <div class="row exec-row">
+          <div class="col-xs-4 exec-img"><img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/201612_Executives_jake_01.jpg" alt="Jake Spencer"/></div>
+          <div class="col-xs-8 exec-bio">
+            <h4><strong>Jake Spencer</strong></h4>
+            <h6><em>Vice-président directeur des ventes et des opérations locales</em></h6>
+            <p>Jake Spencer est le nouveau membre de l&#39;équipe de direction de Tranont. En tant que vice-président de Tranont, il s&#39;appuie sur 11 ans d&#39;expérience dans l&#39;industrie et a fait ses preuves dans le domaine des ventes directes. M. Spencer a choisi de joindre les rangs de Tranont parce qu&#39;il croyait que l&#39;entreprise jouerait un rôle crucial dans l&#39;évolution et le façonnage des industries financières et de ventes directes. Depuis son entrée en fonction, il a inspiré des associés en donnant des séances de formation et aidé à la création de centaines d&#39;équipes. Sa vision pour Tranont continue de grandir, tout comme le nombre d&#39;associés satisfaits. À terme, il aimerait voir la formation d&#39;équipes de dizaines de milliers de personnes et faire de Tranont un point de référence pour les autres entreprises de ventes directes. Son rôle unique au sein de Tranont consiste à mettre l&#39;accent sur le développement des marchés actuels et futurs et de reconnaître et de renforcer les chefs de file à l&#39;origine de ces marchés.</p>
+            <p>M. Spencer vit dans la région de Salt Lake avec sa femme Sarah et quatre beaux enfants. Il aime jouer au golf et passer du temps avec sa famille dans leur chalet.</p>
+          </div>
+        </div>
+        <div class="row bottom-row">
+          <div class="col-xs-12">
+            <hr class="hr-bottom"/>
+          </div>
+        </div>
+      </div>
+      <!-- END Main Content -->
+
+      <!-- BEGIN Footer -->
+	    <div class="container">
+	    	<div class="row footer">
+          <div class="col-xs-2"><span class="footer-address"> 8871 S. Sandy Pkwy<br/> Suite 200<br/> Sandy, UT 84070 </span></div>
+          <div class="col-xs-3"><span class="footer-schedule"> <strong>Numéro sans frais:</strong> 800.973.3715<br/><strong>Télécopieur:</strong> 801.384.7143<br/><strong>Courriel:</strong> support@tranont.com </span></div>
+          <div class="col-xs-3"><span class="footer-schedule"> Lundi au vendredi: 8 h à 18 h<br/> Fermé le samedi et le dimanche<br/><em>heure des Rocheuses</em> </span></div>
+          <div class="col-xs-1">
+          </div>
+          <div class="col-xs-3"><strong>Restez connecté:</strong><br/><ul class="socialmedia-icons" id="socialmedia-icons-lg">
+              <li><a href="https://www.facebook.com/tranontofficial/"><i class="fa fa-lg fa-facebook"></i></a></li>
+              <li><a href="https://twitter.com/tranont"><i class="fa fa-lg fa-twitter"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/tranont"><i class="fa fa-lg fa-linkedin"></i></a></li>
+              <li><a href="https://www.pinterest.com/tranont/"><i class="fa fa-lg fa-pinterest"></i></a></li>
+            </ul>
+          </div>
+	    	</div>
+	    </div>
+      <!-- END Footer -->
+	    <script src="main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,1145 @@
+<!DOCTYPE HTML>
+<html lang="fr-ca">
+    <head>
+		<title>Tranont | Société</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="shortcut icon" href="https://s3-us-west-2.amazonaws.com/cont.training/Images/201612_tranont_favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+      // Script for Google Analytics
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-84500736-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+		<style>
+    /**** BEGIN Navbar Stylings ****/
+    ul li img {
+      width: 30px;
+    }
+    .dropdown .dropdown-menu {
+        -webkit-transition: all;
+        -moz-transition: all;
+        -ms-transition: all;
+        -o-transition: all;
+        transition: all;
+
+        max-height: 0;
+        display: block;
+        overflow: hidden;
+        opacity: 0;
+    }
+    .dropdown.open .dropdown-menu {
+        max-height: 300px;
+        opacity: 1;
+        width: 285px;
+    }
+    .dropdown-header {
+      padding: 5px 10px 2px 10px;
+      font-weight: bold;
+    }
+    .dropdown-menu > li > a {
+      padding: 3px 11px;
+      color: #555555;
+      font-size: 11px;
+    }
+    .dropdown-menu .divider {
+      margin: 0;
+    }
+    .form-control {
+      border-radius: 0;
+    }
+    .join-text {
+      margin-left: 0px;
+    }
+    .nav>li>a {
+      padding: 15px 12px;
+    }
+    .navbar {
+      cursor: pointer;
+        margin-bottom: 0;
+    }
+    .navbar-default {
+      background-color: #ffffff;
+    }
+    .navbar-default .navbar-nav>.open>a, .navbar-default .navbar>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+      color: #ffffff;
+      background-color: #05538a;
+      cursor: pointer;
+    }
+    .navbar-brand {
+      padding: 10px 15px;
+    }
+    .navbar-brand img {
+      width: 125px;
+      border: none;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar-form {
+      float: right;
+      padding: 0;
+    }
+    .navbar-nav {
+      font-size: 11px;
+      letter-spacing: 2px;
+    }
+    .navbar-nav>li>.dropdown-menu {
+      padding: 0;
+    }
+    .pull-right {
+      width: 210px;
+    }
+    #associate-login {
+      color: #777777;
+      transition: color .1s;
+    }
+    #associate-login:hover {
+      color: #05538a;
+    }
+    #join-tranont {
+      color: #05538a;
+      transition: color .1s;
+    }
+    #join-tranont:hover {
+      color: #777777;
+    }
+    #join {
+      color: #05538a;
+      transition: color .1s;
+    }
+    #join:hover {
+      color: #777777;
+    }
+    @media only screen and (max-width: 1200px) {
+      .join-text {
+        margin-left: 0px;
+      }
+      .nav > li > a {
+        padding: 15px 5px;
+      }
+      .pull-right {
+        width: 123px;
+      }
+    }
+    @media only screen and (max-width: 1000px) {
+      #join {
+        display: block;
+      }
+      #join-tranont {
+        display: none;
+      }
+    }
+    @media only screen and (max-width: 991px) {
+      .join-text {
+        margin-left: 0;
+      }
+      .nav > li > a {
+        padding: 15px 2px;
+      }
+      .navbar-brand {
+        padding: 10px 5px;
+      }
+      .navbar-form {
+        width: 90px;
+      }
+      .navbar-nav {
+        letter-spacing: 1px;
+      }
+      .pull-right {
+        width: 85px;
+      }
+    }
+    @media only screen and (min-width: 992px) {
+      #join-tranont {
+        display: block;
+      }
+      #join {
+        display: none;
+      }
+    }
+    @media only screen and (max-width: 767px) {
+      .dropdown.open .dropdown-menu {
+          width: 100%;
+      }
+      .navbar-form {
+        width: auto;
+        margin: 0 15px 15px 15px;
+      }
+      .nav > li > a {
+        padding: 15px 10px;
+      }
+      .navbar-brand {
+        padding: 10px 15px;
+      }
+      .navbar-nav {
+        letter-spacing: 2px;
+      }
+      .pull-right {
+        width: auto;
+      }
+      #join-tranont {
+        display: block;
+      }
+      #join {
+        display: none;
+      }
+    }
+    /**** END Navbar Stylings ****/
+
+      /**** BEGIN Main Page Stylings ****/
+      a {
+        cursor: pointer;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+      a:focus {
+        text-decoration: none;
+      }
+      body {
+        font-family: "Helvetica Neue", "Gill Sans", sans-serif;
+      }
+      p {
+        text-transform: uppercase;
+      }
+      .bottom-row {
+        margin-bottom: 2.5%;
+      }
+      .center {
+        text-align: center;
+      }
+      .col-xs-3 h4 {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 5%;
+      }
+      .col-xs-4 {
+        padding: 0;
+      }
+      .col-xs-4 h4 {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 20px;
+      }
+      .col-xs-6 h4 {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      .col-xs-6 p {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      .col-xs-12 {
+        padding: 0;
+      }
+      .col-xs-12 h4 {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      .col-xs-12 p {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      .dissappearing-br {
+        display: none;
+      }
+      .hr-top {
+        border-color: #888888;
+        margin-top: 5%;
+        width: 80%;
+      }
+      .hr-bottom {
+        border-color: #888888;
+        width: 80%;
+      }
+      .leftright-margins {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .no-top-border {
+        border-width: 0px 2px 2px 2px !important;
+      }
+      .panel-group .panel {
+        border-radius: 0;
+        border: none;
+      }
+      .page-headers {
+        text-transform: uppercase;
+        font-size: 21px;
+        color: #000001;
+        text-align: center;
+        letter-spacing: 4px;
+        margin-top: 25px;
+      }
+      .panel-heading {
+        background-color: #05538a;
+        border-radius: 0;
+        padding: 10px;
+      }
+      .panel-heading h4 {
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-size: 20px;
+      }
+      .pdf-text {
+        text-transform: uppercase;
+        margin-top: 15px;
+        color: #05538a;
+      }
+      .pdf-text:hover {
+        color: #888b8d;
+      }
+      .single-line {
+        padding: 11px 0;
+      }
+      .sub-nav .col-xs-4 {
+        border: 2px solid #05538a;
+        background-color: #ffffff;
+        color: #05538a;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        text-align: center;
+        padding: 5px 0 5px 0;
+        font-weight: bold;
+        font-size: 16px;
+      }
+      .sub-nav .col-xs-4:hover {
+        background-color: #05538a;
+        color: #ffffff;
+      }
+      .sub-nav .col-xs-4 p {
+        margin: 0;
+      }
+      .tax-bot {
+        font-size: 36px;
+        color: #ffffff;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: 40%;
+        letter-spacing: 10px !important;
+        left: 1%;
+      }
+      .tax-services {
+        font-size: 36px;
+        color: #ffffff;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: 35%;
+        letter-spacing: 10px !important;
+        left: 1%;
+      }
+      .ticket-text {
+        font-size: 12px;
+        letter-spacing: 1px;
+      }
+      .top-img {
+        width: 100%;
+        z-index: -1;
+      }
+      .top-img-header {
+        color: #ffffff;
+        position: absolute;
+        letter-spacing: 15px;
+        text-transform: uppercase;
+        font-size: 48px;
+        width: 100%;
+        margin-top: 14%;
+        text-align: center;
+      }
+      .top-img-text {
+        color: #ffffff;
+        position: absolute;
+        text-transform: uppercase;
+        letter-spacing: 8px !important;
+        font-weight: 200;
+        font-size: 21px;
+        width: 100%;
+        margin-top: 21%;
+        text-align: center;
+      }
+      .top-rows {
+        margin-left: 0;
+      }
+      .width-100 {
+        width: 100%;
+      }
+      #bottom-panel {
+        background-color: #05538a;
+        color: #ffffff;
+        padding: 20px 0 40px 0;
+        border-radius: 0;
+        margin-bottom: 0;
+      }
+      #text-bottom {
+        margin-bottom: 15px;
+      }
+      #top-panel {
+        margin-top: 4%;
+      }
+
+      /**** Begin - FAQ Accordion Stylings ****/
+      #nestedAccordion{
+        width: 98%;
+      }
+      #nestedAccordion h2, #nestedAccordion h3,
+      .accordion_container, #nestedAccordion div{
+        /* reset styles for accordion */
+        margin:0;
+        padding:0;
+        font-family: Roboto, sans-serif;
+        font-size: 19px;
+        list-style:none;
+      }
+      .accordion_container {
+        display:none;
+        color: #888b8d;
+        overflow:hidden;
+      }
+      .accordion_container a {
+      	text-decoration: none;
+      }
+      .accordion_container p {
+      	padding: 2px 5px 5px 0px;
+      	font-size: 14px;
+        margin: 0;
+        color: #000001;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      #nestedAccordion h2{
+        cursor: pointer;
+        color: #888b8d;
+        font-size: 21px;
+        font-weight: 400;
+        padding: 10px 0 10px 10px;
+        margin: 6px 0 5px 0;
+        background-color: #ffffff;
+        border: 4px solid #888b8d;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      #nestedAccordion h2:focus {
+        border-color: #05538a;
+        color: #05538a;
+      }
+      #nestedAccordion h2:hover {
+        border-color: #05538a;
+        color: #05538a;
+      }
+      #nestedAccordion h3{
+      	line-height: 21px;
+        cursor:pointer;
+        padding:5px 0 5px 15px;
+        color: #999999;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+        background-color: #ffffff;
+        text-transform: uppercase;
+        font-size: 16px;
+        letter-spacing: 2px;
+      }
+      #nestedAccordion h3:hover{
+        color:#222222;
+      }
+      #nestedAccordion h3 + div{
+        background-color:#ffffff;
+        padding: 3px 5px 5px 30px;
+      }
+      #nestedAccordion li{
+        font-weight: 100;
+        color: #000000;
+        font-size: 16px;
+      }
+      /**** End - FAQ Accordion Stylings ****/
+
+      @media only screen and (max-width: 991px) {
+        .sub-nav .col-xs-4 {
+          letter-spacing: 2px;
+          font-size: 14px;
+        }
+        .top-img-text {
+          margin-top: 22%;
+        }
+        #blog-text {
+          height: 52px;
+        }
+        #investorrelations-text {
+          height: 56px;
+        }
+      }
+      @media only screen and (max-width: 700px) {
+        .col-xs-3 h4 {
+          font-size: 16px;
+        }
+        .col-xs-4 h4 {
+          font-size: 16px;
+        }
+      }
+      @media only screen and (max-width: 670px) {
+        .top-img-text {
+          margin-top: 22.5%;
+        }
+        .col-xs-3 h4 {
+          font-size: 14px;
+        }
+        .col-xs-4 h4 {
+          font-size: 14px;
+        }
+        .sub-nav .col-xs-4 {
+          letter-spacing: 2px;
+          font-size: 12px;
+        }
+        .sub-nav .col-xs-6 {
+          letter-spacing: 2px;
+        }
+        .top-img-header {
+          font-size: 36px;
+          margin-top: 15%;
+        }
+        .top-img-text {
+          font-size: 18px;
+          margin-top: 23%;
+        }
+        #blog-text {
+          height: 46px;
+          padding-top: 2px;
+        }
+        #investorrelations-text {
+          height: 53px;
+          padding-top: 7px;
+        }
+      }
+      @media only screen and (max-width: 600px) {
+        .col-xs-3 h4 {
+          font-size: 12px;
+        }
+        .col-xs-3 .glyphicon {
+          height: 100px;
+          width: 100px;
+          border: 8px solid #05538a;
+        }
+        .col-xs-4 h4 {
+          font-size: 12px;
+        }
+        .sub-nav .col-xs-4 {
+          letter-spacing: 1px;
+        }
+      }
+      @media only screen and (max-width: 535px) {
+        .single-line {
+          padding: 8.5px 0;
+        }
+        .sub-nav .col-xs-4 {
+          letter-spacing: 0px;
+          font-size: 10px;
+        }
+        .top-img-header {
+          font-size: 25px;
+          margin-top: 17%;
+        }
+        .top-img-text {
+          font-size: 15px;
+          margin-top: 24%;
+          letter-spacing: 4px !important;
+        }
+        #blog-text {
+          height: 40px;
+        }
+        #investorrelations-text {
+          height: 45px;
+          padding-top: 6px;
+        }
+      }
+      @media only screen and (max-width: 400px) {
+        .center h4 {
+          font-size: 12px;
+        }
+        .center p {
+          font-size: 12px;
+        }
+        .col-xs-3 h4 {
+          font-size: 8px;
+          letter-spacing: 1px;
+        }
+        .col-xs-4 h4 {
+          font-size: 12px;
+          letter-spacing: 1px;
+        }
+        .col-xs-12 h4 {
+          font-size: 14px;
+        }
+        .col-xs-12 li {
+          font-size: 10px;
+        }
+        .col-xs-12 p {
+          font-size: 12px;
+        }
+        .dissappearing-br {
+          display: block;
+        }
+        .row {
+          margin-left: 0;
+          margin-right: 0;
+        }
+        .sub-nav .col-xs-6 {
+          font-size: 8px;
+        }
+        .top-img-header {
+          font-size: 21px;
+          margin-top: 18%;
+          letter-spacing: 8px;
+        }
+        .top-img-text {
+          font-size: 12px;
+          margin-top: 25%;
+        }
+        #blog-text {
+          height: 40px;
+        }
+        #investorrelations-text {
+          height: 45px;
+          padding-top: 6px;
+        }
+      }
+      @media only screen and (max-width: 399px) {
+        .accordion_container p {
+          font-size: 10px;
+          line-height: 18px;
+          padding: 0px 5px 5px 0px;
+        }
+        .col-xs-12 h4 {
+          font-size: 11px;
+          padding-top: 5px;
+        }
+        .sub-nav .col-xs-4 {
+          letter-spacing: 1px;
+          font-size: 8px;
+        }
+        .top-img-header {
+          font-size: 18px;
+          margin-top: 20%;
+          letter-spacing: 5px;
+        }
+        #nestedAccordion h2 {
+          border: 2.5px solid #888b8d;
+          font-size: 16px;
+          padding: 8px 0 6px 10px;
+        }
+        #nestedAccordion h3 {
+          font-size: 12px;
+          letter-spacing: 1px;
+        }
+        #blog-text {
+          height: 34px;
+          padding-top: 1px;
+        }
+        #investorrelations-text {
+          height: 42px;
+          padding-top: 3px;
+        }
+        #supportfaq_text {
+          height: 34px;
+          padding-top: 0;
+        }
+      }
+      /**** END Main Page Stylings ****/
+
+      /**** BEGIN Footer Stylings ****/
+      ul li a i {
+        background: #888888;
+        color: #ffffff;
+        width: 30px;
+        height: 30px;
+        border-radius: 20px;
+        font-size: 19px !important;
+        text-align: center;
+        margin-right: 10px;
+        padding-top: 23%;
+        padding-right: 1px;
+        transition: background-color .5s;
+      }
+      ul li a i:hover {
+        background-color: #05538a;
+      }
+      .footer {
+        background-color: #ffffff;
+        color: #aaaaaa;
+        border: 1px solid #cccccc;
+        padding-top: 7px;
+        padding-bottom: 1%;
+      }
+      .socialmedia-icons {
+        overflow: auto;
+        padding-left: 0;
+      }
+      .socialmedia-icons li {
+        list-style-type: none;
+        float: left;
+      }
+      @media only screen and (max-width: 992px) {
+        ul li a i {
+          width: 30px;
+          height: 30px;
+          border-radius: 25px;
+          font-size: 19px !important;
+          margin-right: 7px;
+          margin-top: 7px;
+        }
+        .footer {
+          padding-bottom: 7px;
+        }
+      }
+      @media only screen and (max-width: 713px) {
+        ul li a i {
+          margin-top: 7px;
+          padding-left: 1px;
+        }
+        .footer {
+          font-size: 11px;
+        }
+      }
+      @media only screen and (max-width: 417px) {
+        ul li a i {
+          margin-top: 4px;
+          margin-right: 4px;
+          font-size: 18px !important;
+          padding-top: 9px;
+          padding-left: 3px;
+        }
+        .footer {
+          font-size: 9px;
+          padding: 0 5px;
+        }
+        .footer .col-xs-3 {
+          padding-right: 0;
+          padding-left: 0;
+        }
+      }
+      /**** END Footer Stylings ****/
+		</style>
+
+    </head>
+    <body>
+      <!-- BEGIN Navbar -->
+      <nav class="navbar navbar-default navbar-fixed-top">
+  		  <div class="container">
+  		    <div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Navigation à bascule</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="http://tranontinternational.ca/"><img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/Tranont_Logo-horiz.jpg"/></a></div>
+          <div class="navbar-collapse collapse">
+    		    <ul class="nav navbar-nav">
+    		      <li class="dropdown"><a class="dropdown-toggle disabled" data-toggle="dropdown" href="http://fr.tranontinternational.ca/company.html">SOCIÉTÉ</a>
+                <ul class="dropdown-menu">
+    		      		<li><a href="http://fr.tranontinternational.ca/company.html#associates">ASSOCIÉS</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/company.html#foundation">FONDATION</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/company.html#investor-relations">RELATIONS AVEC LES INVESTISSEURS</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/company.html#media-kit">TROUSSE MÉDIA </a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/executives.html">DIRIGEANTS</a></li>
+      		      	<li><a href="http://fr.tranontinternational.ca/aboutus.html">À PROPOS DE NOUS</a></li>
+      		      	<li><a href="http://fr.tranontinternational.ca/company.html#supportfaq">ASSISTANCE</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/company.html#supportfaq">FOIRE AUX QUESTIONS</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/company.html#blog">BLOGUE</a></li>
+    		      	</ul>
+    		      </li>
+    		      <li class="dropdown"><a class="dropdown-toggle disabled" data-toggle="dropdown" href="http://fr.tranontinternational.ca/products.html">PRODUITS</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-header">CORE</li>
+    		      		<li><a href="http://fr.tranontinternational.ca/oneview.html">ONEVIEW</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/defend.html">DEFEND</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/taxbot.html">TAXBOT</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/legal.html">LÉGAL</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/creditservices.html">SERVICES DE CRÉDIT</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/taxservices.html">SERVICES FISCAUX</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">OUTILS COMMERCIAUX</li>
+    		      		<li><a href="http://fr.tranontinternational.ca/marketingplatform.html">PLATEFORME COMMERCIALE</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/associatecenter.html">CENTRE DES ASSOCIÉS</a></li>
+                  <li class="divider"></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/retailservices.html">SERVICES DE DÉTAIL</a></li>
+    		      	</ul>
+    		      </li>
+    		      <li class="dropdown"><a class="dropdown-toggle disabled" data-toggle="dropdown" href="http://fr.tranontinternational.ca/compensation.html">RÉMUNÉRATION</a>
+                <ul class="dropdown-menu">
+    		      		<li><a href="http://fr.tranontinternational.ca/compensation.html#comp-plan">RÉGIME DE RÉMUNÉRATION</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/compensation.html#why-tranont">POURQUOI CHOISIR TRANONT</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/compensation.html#current-promos">PROMOTIONS ACTUELLES</a></li>
+                  <li><a href="http://fr.tranontinternational.ca/retailservices.html">SERVICES DE DÉTAIL</a></li>
+    		      	</ul>
+    		      </li>
+    		      <li class="dropdown"><a class="dropdown-toggle disabled" data-toggle="dropdown" href="http://fr.tranontinternational.ca/events.html">ÉVÉNEMENTS</a>
+                <ul class="dropdown-menu">
+    		      		<li><a href="http://fr.tranontinternational.ca/events.html#national">ÉVÉNEMENTS NATIONAUX</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/events.html#international">ÉVÉNEMENTS INTERNATIONAUX</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/events.html#regional">ÉVÉNEMENTS RÉGIONAUX</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/events.html#calendar">CALENDRIER DES ÉVÉNEMENTS</a></li>
+    		      	</ul>
+    		      </li>
+              <li class="dropdown"><a class="dropdown-toggle disabled" data-toggle="dropdown"><img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/canadian-flag-small.png" alt="Drapeau canadien"/></a>
+                <ul class="dropdown-menu">
+                  <li><a href="http://tranontinternational.com/company.html"><img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/canadian-flag-small.png" alt="Drapeau canadien"/> CA (ANGLAIS)</a></li>
+                  <li><a href="http://tranont.com/company.html"><img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/united-states-flag.png" alt="Drapeau américain"/> É.-U.</a></li>
+                </ul>
+              </li>
+    		      <li><a class="join-text" href="https://member.tranont.com/signup"><span id="join-tranont"><strong>REJOINDRE TRANONT</strong></span><span id="join"><strong>REJOINDRE</strong></span></a></li>
+    		      <li><a href="http://members.tranont.com/login"><span id="associate-login"><strong>CONNEXION</strong></span></a></li>
+    		    </ul>
+            <div class="dropdown pull-right">
+              <form class="navbar-form" role="search">
+                <div class="input-group"><input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term"><div class="input-group-btn" id="srch-btn"><button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button></div>
+                </div>
+              </form>
+            </div>
+          </div>
+  		  </div>
+  		</nav>
+      <!-- END Navbar -->
+
+      <!-- BEGIN Main Content -->
+      <div class="container main">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2 class="top-img-header">Société</h2>
+            <h4 class="top-img-text">Les personnes comme vous</h4><img class="top-img" src="https://s3-us-west-2.amazonaws.com/cont.training/Images/201611_Company_topmod_01.jpg" alt="Sandy, siège social UT"/></div>
+        </div>
+        <div class="row sub-nav"><a href="#associates"><div class="col-xs-4">
+            <p class="single-line">Associés</p>
+          </div></a> <a href="#foundation"><div class="col-xs-4">
+            <p class="single-line">Fondation</p>
+          </div></a> <a href="#investor-relations"><div class="col-xs-4" id="investorrelations-text">
+            <p>Relations avec les investisseurs</p>
+          </div></a></div>
+        <div class="row sub-nav"><a href="#media-kit"><div class="col-xs-4 no-top-border">
+            <p>Trousse<br/>média</p>
+          </div></a> <a href="#supportfaq"><div class="col-xs-4 no-top-border" id="supportfaq_text">
+            <p>Assistance et foire aux questions</p>
+          </div></a> <a href="#blog"><div class="col-xs-4 no-top-border" id="blog-text">
+            <p class="single-line">Blogue</p>
+          </div></a></div>
+        <div class="row" id="associates">
+          <div class="col-xs-12">
+            <hr class="hr-top"/>
+              <h3 class="page-headers">Associés</h3>
+            <hr class="hr-bottom"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <p class="leftright-margins">Les associés de Tranont représentent la plus importante partie de l&#39;activité de la société. Ils ont été l&#39;élément moteur principal des progrès continus et de la croissance de Tranont à l&#39;échelle mondiale. Tranont comprend le travail acharné et les défis auxquels plusieurs associés doivent faire face pendant leur parcours. L&#39;équipe de gestion à Tranont veille en priorité à assister et à encourager chaque associé tout au long de son avancée.</p>
+            <p class="leftright-margins">Nous apprécions tout particulièrement l&#39;occasion de passer du temps avec nos associés et de travailler avec eux sur leurs succès et accomplissements individuels. Chaque année, nous organisons régulièrement des événements à Tranont dans le but de créer un sentiment de dynamisme, de motivation et d&#39;enthousiasme, chaque événement ayant un côté instructif qui motive tous ceux qui y participent.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6">
+            <div class="pdf-text"><a href="https://s3-us-west-2.amazonaws.com/cont.training/Docs/TranontTermsConditions.07.14.16.pdf" target="_blank"><h5 class="center"><span class="glyphicon glyphicon-paperclip"></span> Conditions générales relatives aux associés de Tranont</h5></a></div>
+          </div>
+          <div class="col-xs-6">
+            <div class="pdf-text"><a href="https://s3-us-west-2.amazonaws.com/cont.training/Docs/Tranont+Policy+Manual.01.18.17.pdf" target="_blank"><h5 class="center"><span class="glyphicon glyphicon-paperclip"></span> Manuel des politiques relatives aux associés de Tranont</h5></a></div>
+          </div>
+        </div>
+        <div class="row" id="foundation">
+          <div class="col-xs-12">
+            <hr class="hr-top"/>
+              <h3 class="page-headers">Fondation</h3>
+            <hr class="hr-bottom"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <p class="leftright-margins">Le principe fondateur et la devise de Tranont est de « Changer la vie ».</p>
+            <p class="leftright-margins">Qu&#39;il s&#39;agisse de produits et services venant assister les personnes dans la gestion de leurs finances ou d&#39;une communauté de personnes qui partagent les mêmes idées souhaitant vivre pleinement chaque jour, Tranont cherche à tout prix à « Changer la vie ». </p>
+            <p class="leftright-margins">Les employés, associés et partenaires de Tranont sont encouragés à soutenir les projets au niveau des communautés locales. Ces personnes sont également invitées à contribuer financièrement à des causes officiellement promues lors des événements par Tranont.</p>
+            <p class="leftright-margins">Pour toute question concernant les programmes de charité auxquels contribue Tranont ou pour s&#39;engager, veuillez envoyer un courriel à <a href="mailto:support@tranont.com">support@tranont.com.</a></p>
+          </div>
+        </div>
+        <div class="row" id="investor-relations">
+          <div class="col-xs-12">
+            <hr class="hr-top"/>
+              <h3 class="page-headers">Relations avec les investisseurs</h3>
+            <hr class="hr-bottom"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <p class="leftright-margins">Tranont est une société privée basée à Sandy dans l&#39;Utah. Nous serions ravis de pouvoir discuter avec vous concernant Tranont et les diverses occasions d&#39;affaires disponibles.</p>
+            <p class="leftright-margins">Pour toute question relative aux relations avec les investisseurs, veuillez contacter Russ Losee à <a href="mailto:investorrelations@tranont.com">investorrelations@tranont.com.</a></p>
+          </div>
+        </div>
+        <div class="row" id="media-kit">
+          <div class="col-xs-12">
+            <hr class="hr-top"/>
+              <h3 class="page-headers">Trousse média</h3>
+            <hr class="hr-bottom"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 center">
+            <h4><a href="https://s3-us-west-2.amazonaws.com/cont.training/Docs/Tranont_AssociateLogo.eps">Logo de l&#39;associé de Tranont (.eps)</a></h4>
+            <p>En qualité d&#39;associé de Tranont, ce logo doit être utilisé à la place du logo par défaut de Tranont dans la création de toute presse électronique ou écrite.</p>
+            <h4><a href="https://s3-us-west-2.amazonaws.com/cont.training/Images/Tranont_Associate_Logo.png">.png Version</a></h4>
+          </div>
+          <div class="col-xs-6 center">
+            <h4><a href="https://s3-us-west-2.amazonaws.com/cont.training/Docs/Tranont_StyleGuide_MediaKit.pdf">Guide stylistique de Tranont</a></h4>
+            <p>Ces styles doivent être respectés lors de la création de brochures, de dépliants ou autre presse écrite ou électronique de toute sorte visant à promouvoir Tranont et/ou ses produits et services ou visant à vendre les produits et/ou services de Tranont.</p>
+          </div>
+        </div>
+        <div class="row" id="supportfaq">
+          <div class="col-xs-12">
+            <hr class="hr-top"/>
+              <h3 class="page-headers">Assistance et foire aux questions</h3>
+            <hr class="hr-bottom"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-4 center">
+            <h4>Adresse du bureau</h4>
+            <p>8871 S. Sandy Parkway<br/> Suite 200<br/> Sandy, UT 84070</p>
+          </div>
+          <div class="col-xs-4 center">
+            <h4>Horaires</h4>
+            <p>Lundi au vendredi : 8 h à 18 h<br/> Fermé le samedi et le dimanche<br/><em>heure des Rocheuses</em></p>
+          </div>
+          <div class="col-xs-4 center">
+            <h4>Nous contacter</h4>
+            <p><strong>Numéro sans frais :</strong> (800) 973-3715<br/><strong>Télécopieur :</strong> (801) 384-7143<br/><strong>Courriel :</strong><a href="mailto:support@tranont.com"> support<br class="dissappearing-br"/>@tranont.com</a></p>
+          </div>
+        </div>
+        <div class="row">
+          <div id="nestedAccordion">
+      			<h2>Général</h2>
+      			    <div class="accordion_container">
+      			        <h3>Comment puis-je me connecter et commencer à utiliser Tranont CORE?</h3>
+      			        <div class="accordion_container">
+      			            <p>Juste après l&#39;inscription, vous recevrez un courriel de bienvenue détaillant tous les produits et services CORE inclus dans les premiers 30 jours de votre abonnement annuel. Vous trouverez dans ce courriel les instructions détaillées de connexion pour vous permettre de commencer à utiliser les excellents produits et outils de Tranont.  Vous avez également accès à une fiche Tranont CORE qui fournira les instructions vous permettant de commencer à utiliser Tranont CORE.</p>
+      			        </div>
+      			        <h3>Je viens de rejoindre Tranont, où dois-je envoyer mon W-9?</h3>
+      			        <div class="accordion_container">
+      			            <p>Envoyez votre W-9 par télécopie à 801 384-7143 ou scannez-le et envoyez-le par courriel à <a href="mailto:support@tranont.com">support@tranont.com</a>.</p>
+      			        </div>
+      			        <h3>Y a-t-il un âge limite pour l&#39;inscription?</h3>
+      			        <div class="accordion_container">
+      			            <p>Un associé doit être âgé d&#39;au moins 18 ans au moment de l&#39;inscription.</p>
+      			        </div>
+      			        <h3>Puis-je inscrire des membres de la famille (époux ou épouse, enfants)?</h3>
+      			        <div class="accordion_container">
+      			            <p>Les associés ne sont pas autorisés à inscrire des membres de la famille tels que leur époux ou épouse et leurs enfants majeurs sans leur consentement exprès ou sans leur présence lors du processus d&#39;inscription.</p>
+      			        </div>
+      			        <h3>Puis-je disposer d&#39;un deuxième compte sous la raison sociale de mon entreprise?</h3>
+      			        <div class="accordion_container">
+      			            <p>Si vous êtes enregistré comme propriétaire d&#39;une société, vous ne pouvez pas inscrire cette société dans la mesure où une personne ne peut détenir qu&#39;un maximum de 100 % d&#39;un poste au sein de Tranont.</p>
+      			        </div>
+      			        <h3>À quelle date a été créé Tranont?</h3>
+      			        <div class="accordion_container">
+      			            <p>En 2008, les fondateurs de Tranont ont créé une société en se basant sur les valeurs d&#39;intégrité, de confiance, de durabilité, et sur le besoin d&#39;offrir des produits pour aider les personnes à mieux gérer leurs finances. Nous avons commencé en toute simplicité avec un produit technologique innovateur visant à aider les personnes à gérer leurs finances. Tranont tel que nous le connaissons de nos jours a été enregistré en 2013 et lancé en janvier 2014.</p>
+      			        </div>
+      			        <h3>Offrez-vous des services aux clients se trouvant hors des États-Unis et du Canada?</h3>
+      			        <div class="accordion_container">
+      			            <p>Non. En l&#39;état actuel, nous ne faisons pas affaire en dehors des États-Unis ou du Canada.</p>
+      			        </div>
+      			        <h3>Je ne peux pas me connecter à mon compte Tranont. Pourquoi?</h3>
+      			        <div class="accordion_container">
+      			            <p>Si vous êtes certain d&#39;utiliser le bon nom d&#39;utilisateur et le bon mot de passe et si votre programme d&#39;Auto-Livraison est à jour, vous devriez pouvoir vous connecter à votre compte. Si vous continuez d&#39;éprouver des difficultés, veuillez appeler les services aux associés au 800 973-3715 pour obtenir de l&#39;aide.</p>
+      			        </div>
+      			        <h3>Pui-je modifier le placement d&#39;une personne que j&#39;ai parrainée?</h3>
+      			        <div class="accordion_container">
+      			            <p>Oui, tous les nouveaux associés sont placés directement en dessous de leur parrain et le parrain dispose de sept jours calendaires pour les placer à un autre endroit dans leur organisation. Une fois un associé placé, il n&#39;est plus possible de le déplacer.</p>
+      			        </div>
+      			        <h3>Tranont prévoit-elle des exceptions aux règles de placement?</h3>
+      			        <div class="accordion_container">
+      			            <p>Toutes les considérations relatives au placement doivent être communiquées par écrit au service de conformité au (<a href="mailto:support@tranont.com">support@tranont.com</a>). L&#39;approbation de tous les associés affectés par le changement doit accompagner la demande.</p>
+      			        </div>
+      			        <h3>Puis-je changer de parrain après avoir rejoint Tranont?</h3>
+      			        <div class="accordion_container">
+      			            <p>Oui, si vous vous êtes inscrit il y a moins de sept jours, vous pouvez demander à ce que votre parrain soit remplacé par un autre associé de Tranont.</p>
+      			        </div>
+      			    </div>
+      			<h2>Produits</h2>
+      			    <div class="accordion_container">
+      			        <h3>Puis-je acheter les services CORE en tant que client si je ne rejoins pas Tranont en tant qu&#39;associé?</h3>
+      			        <div class="accordion_container">
+      			            <p>Les produits Tranont CORE tels que OneView, Tax Bot, Defend, services juridiques, et services de crédit peuvent être achetés sous forme de bouquets ou à la carte par ceux qui ne souhaitent pas rejoindre Tranont en tant qu&#39;associé. Rendez-vous simplement sur Tranont.com, cliquez sur Rejoindre Tranont et sélectionnez l&#39;option client.</p>
+      			        </div>
+      			        <h3>Combien coûte chaque produit ou service CORE pour les personnes souhaitant devenir clients sans devenir partenaires de Tranont?</h3>
+      			        <div class="accordion_container">
+      			            <p>La tarification des produits se trouve sur la page de commande de Tranont.com : veuillez cliquer sur « Rejoindre Tranont » et sélectionner l&#39;option client.  La prochaine page du processus affichera les tarifs des produits et services CORE.</p>
+      			        </div>
+      			        <h3>Dois-je payer 125 $ tous les mois pour bénéficier des services CORE?</h3>
+      			        <div class="accordion_container">
+      			            <p>Non. Les associés ne sont pas obligés d&#39;acheter des produits ou services CORE pour conserver leur abonnement.</p>
+      			        </div>
+      			        <h3>Que se passe-t-il si, lors d&#39;un certain mois, je ne peux pas payer pour les produits CORE à la date prévue? </h3>
+      			        <div class="accordion_container">
+      			            <p>Si vous manquez un paiement mensuel dans le cadre de votre abonnement à CORE, vous disposez d&#39;un délai supplémentaire de 15 jours avant que l&#39;accès aux produits auxquels vous avez souscrit ne soit suspendu.</p>
+      			        </div>
+      			        <h3>À qui dois-je m&#39;adresser pour toute question de facturation?</h3>
+      			        <div class="accordion_container">
+      			            <p>Les questions relatives à la facturation doivent être communiquées aux services aux associés en composant le 800 973-3715.</p>
+      			        </div>
+      			        <h3>Comment puis-je modifier les informations relatives à ma carte de crédit?</h3>
+      			        <div class="accordion_container">
+      			            <p>Les informations de paiement peuvent être mises à jour en contactant les services aux associés au 800 973-3715.</p>
+      			        </div>
+      			        <h3>Comment puis-je modifier mon adresse et/ou mon numéro de téléphone?</h3>
+      			        <div class="accordion_container">
+      			            <p>Les renseignements personnels peuvent être mis à jour en contactant les services aux associés au 800 973-3715.</p>
+      			        </div>
+      			        <h3>Combien de temps mon abonnement peut rester inactif avant que je ne perde mon poste?</h3>
+      			        <div class="accordion_container">
+      			            <p>Votre abonnement mensuel peut rester inactif pour une durée indéfinie pendant sa période de validité.  Des frais de réactivation de 149 $ vous seront facturés lorsque vous déciderez de réactiver l&#39;abonnement.</p>
+      			        </div>
+      			        <h3>À quelle date dois-je régler mon abonnement mensuel CORE?</h3>
+      			        <div class="accordion_container">
+      			            <p>L&#39;abonnement entre immédiatement en vigueur et nous mettrons en place un nouveau processus d&#39;adhésion mensuelle. Le processus que nous utilisons actuellement pour déterminer la prochaine date de facturation se base sur la période du mois lors duquel un nouvel associé s&#39;est inscrit pour une facturation le 5 ou le 20 du mois. Dans la mesure où personne n&#39;a jamais bénéficié de moins de 30 jours de services CORE suivant leur inscription, il y a eu de la confusion quant à la prochaine date de facturation et la période de 30 jours de services gratuits.<br/> Le nouveau processus que nous utilisons déterminera la prochaine date de facturation 30 jours suivant la date d&#39;inscription. Si vous vous êtes inscrit le 9 du mois, la prochaine date de facturation sera le 9 du mois prochain et ainsi de suite.<br/> Ce nouveau processus permet également aux associés et aux clients actuels de définir dorénavant une date spécifique du mois comme leur date de facturation. Les personnes souhaitant modifier leur date de facturation actuelle du 5 ou du 20 du mois à une autre date mieux adaptée à leur échéancier financier peuvent contacter les services aux associés au 800 973-3715 ou répondre simplement à ce courriel et indiquer la date souhaitée pour votre facturation mensuelle.</p>
+      			        </div>
+      			        <h3>Est-ce que OneView est fiable?</h3>
+      			        <div class="accordion_container">
+      			            <p>Bien qu&#39;il n&#39;existe pas de garantie à 100 % contre toutes les failles de sécurité, OneView utilise un cryptage SSL de 256 bits et notre site effectue chaque jour des tests rigoureux pour vous offrir un haut niveau de sécurité et garantir un maximum de protection contre le vol d&#39;identité, les virus, logiciels espions, et autres menances en ligne. OneView est un produit en mode lecture seule, ce qui signifie que nous ne conservons pas vos données. Il n&#39;est pas possible de transférer ou de retirer des fonds. Tranont s&#39;engage à ne pas vendre ni divulguer vos renseignements personnels et confidentiels en tout temps pour quelque raison que ce soit.  Nous protégeons votre confidentialité sur l&#39;Internet et sommes pleinement déterminés à protéger vos renseignements personnels.</p>
+      			        </div>
+      			        <h3>Comment puis-je montrer le produit OneView aux personnes sans montrer mes renseignements bancaires?</h3>
+      			        <div class="accordion_container">
+      			            <p>Si des personnes souhaitent voir une démo de OneView, vous pouvez les orienter vers :<br/><a href="https://oneview.tranont.com/app/login">https://oneview.tranont.com/app/login</a><br/> nom d&#39;utilisateur : demo@tranont.com<br/> Mot de passe : Password@1</p>
+      			        </div>
+      			        <h3>Je ne peux pas trouver ou rattacher mon compte auprès de ma banque ou de ma coopérative de crédit à mon compte OneView. Pour quelle raison?</h3>
+      			        <div class="accordion_container">
+      			            <p>Bien que OneView soit partenaire avec plus de 16 000 institutions financières, pas toutes les banques, coopératives de crédit ou organisations de services financiers ont accepté de travailler avec notre système. Pour toute question relative à cette situation, veuillez envoyer un ticket à notre équipe de soutien OneView en cliquant <a href="http://help.tranont.net/support/tickets/new/" target="_blank">ici</a>.</p>
+      			        </div>
+      			        <h3>Existe-t-il un service d&#39;assistance téléphonique pour OneView?</h3>
+      			        <div class="accordion_container">
+      			            <p>Pour toute question d&#39;ordre général concernant OneView, sa fonction et ses caractéristiques, veuillez contacter les services aux associés de Tranont au 800 973-3715, option 5. Toutes les questions relatives à l&#39;assistance technique doivent être envoyées à l&#39;équipe de soutien Oneview en cliquant <a href="http://help.tranont.net/support/tickets/new/" target="_blank">ici</a>.</p>
+      			        </div>
+      			        <h3>Comment puis-je réinitialiser mon mot de passe pour avoir accès à Tax Bot sur mon appareil?</h3>
+      			        <div class="accordion_container">
+      			            <p>Pour réinitialiser le mot de passe de votre appli mobile Tax Bot, vous devez contacter Tax Bot au 800 973-3715, option 6 ou au 855 482-9268. Ils vont enverront un courriel vous permettant de réinitialiser votre mot de passe.</p>
+      			        </div>
+      			    </div>
+      			<h2>Programme Jeep 4 U</h2>
+      			    <div class="accordion_container">
+      			        <h3>Comment puis-je avoir droit à une prime auto? </h3>
+      			        <div class="accordion_container">
+      			            <p>Les associés doivent atteindre le rang de conseiller financier (CF) par le biais de trois associés qu&#39;ils ont personnellement sponsorisés, 1 200 points de volume de groupe qualifié, et répondre aux exigences minimales de legs pour avoir droit à la prime auto de Tranont.</p>
+      			        </div>
+      			        <h3>Si je décide de ne pas obtenir de Jeep™ une fois le rang de CF atteint, puis-je en obtenir une plus tard?</h3>
+      			        <div class="accordion_container">
+      			            <p>Oui. Si, une fois que vous y avez droit, vous décidez un jour de profiter de la Jeep™ homologuée, vous serez alors admissible à recevoir un paiement Jeep™ supplémentaire de 250 $ une fois que vous aurez notifié Tranont de votre achat.   </p>
+      			        </div>
+      			        <h3>Une fois le rang de CF atteint, suis-je certain de pouvoir recevoir la prime auto les mois suivants?</h3>
+      			        <div class="accordion_container">
+      			            <p>Non. Bien que vous ne perdiez pas le titre de CF, les associés doivent renouveler leur admissibilité chaque mois pour pouvoir recevoir la commission relative à ce rang. </p>
+      			        </div>
+      			        <h3>Tranont m&#39;aidera-t-il à bénéficier d&#39;un emprunt pour acheter un véhicule de la marque Jeep™?</h3>
+      			        <div class="accordion_container">
+      			            <p>Non. Tranont ne peut pas venir en aide lors de l&#39;obtention/paiement du contrat de location ou lors de l&#39;obtention/paiement de l&#39;emprunt pour le véhicule associé au programme de prime auto.</p>
+      			        </div>
+      			        <h3>Quels sont les véhicules de la marque Jeep™ admissibles à ce programme?</h3>
+      			        <div class="accordion_container">
+      			            <p>Wrangler, Wrangler Unlimited, Cherokee, Grand Cherokee, Patriot, et Renegade sont les seuls modèles de la marque Jeep™ admissibles au programme.</p>
+      			        </div>
+      			        <h3>Si mon époux ou épouse et moi-même sommes tous les deux membres Tranont, avons-nous tous les deux droit à la prime Jeep™?</h3>
+      			        <div class="accordion_container">
+      			            <p>Oui. Cependant, il existe deux méthodes de qualification supplémentaires qui ouvrent droit à une seconde Jeep™ dans le même foyer. Consultez le <a href="https://tranontinternational.ca/compensation.html/">régime de rémunération</a> pour plus d&#39;informations.</p>
+      			        </div>
+      			        <h3>Dois-je coller des autocollants portant le logo de Tranont sur ma Jeep™?</h3>
+      			        <div class="accordion_container">
+      			            <p>Pour recevoir la prime auto supplémentaire de 250 $ dans le cadre du programme, l&#39;associé doit accepter d&#39;apposer l&#39;ensemble d&#39;autocollants minimum de Tranont (fourni par Tranont) et de fournir une photo des autocollants apposés sur le véhicule à titre de preuve. </p>
+      			        </div>
+      			    </div>
+      			<h2>Commissions</h2>
+      			    <div class="accordion_container">
+      			        <h3>Qu&#39;est-ce que le volume personnel (Personal Volume ou PV)?</h3>
+      			        <div class="accordion_container">
+      			            <p>Le volume personnel (PV) correspond à la valeur en points des produits et des services achetés ou vendus par un associé en l&#39;espace d&#39;un mois civil. Tous les produits ne sont pas admissibles à la valeur PV.</p>
+      			        </div>
+      			        <h3>Qu&#39;est-ce que le volume de groupe qualifié (Qualified Group Volume ou GV)?</h3>
+      			        <div class="accordion_container">
+      			            <p>Le volume de groupe qualifié (GV) correspond au volume personnel (PV) de tous les associés au sein de l&#39;organisation d&#39;associés une fois la règle de Max Leg % appliquée. </p>
+      			        </div>
+      			        <h3>Mon volume personnel (PV) contribue-t-il à mon volume de groupe (GV)? </h3>
+      			        <div class="accordion_container">
+      			            <p>Non. Seul le volume généré par les autres membres de votre groupe contribue à votre GV.</p>
+      			        </div>
+      			        <h3>Dois-je comptabiliser l&#39;ensemble du volume de groupe (GV) généré au sein de mon groupe?</h3>
+      			        <div class="accordion_container">
+      			            <p>Dans certains cas, seule une partie du volume de groupe est prise en compte aux fins de qualification à un rang.  Le calcul des volumes de groupe est sujet aux exigences de la règle de Max Leg %. Consultez les détails <a href="https://tranontinternational.ca/compensation.html/" target="_blank">ici</a>.</p>
+      			        </div>
+      			        <h3>Ma commission peut-elle être directement créditée sur mon compte bancaire?</h3>
+      			        <div class="accordion_container">
+      			            <p>Nous ne pouvons effectuer de dépôts directs que sur les comptes ProPay (<a href="http://www.propay.com" target="_blank">www.propay.com</a>). Si vous avez décidé de ne pas ouvrir un de ces comptes et de ne pas recevoir de carte de débit Tranont lors de votre inscription auprès de Tranont, leurs frais s&#39;élèvent à 15 $ la première année et à 10 $ les années suivantes. Les associés qui souhaitent ouvrir un de ces comptes peuvent envoyer un courriel à <a href="support@tranont.com">support@tranont.com</a> ou contacter les services aux associés au 800 973-3715.</p>
+      			        </div>
+      			        <h3>Quand puis-je recevoir les commissions résiduelles et/ou les primes promotionnelles?</h3>
+      			        <div class="accordion_container">
+      			            <p>Les commissions résiduelles de Tranont (y compris les commissions gagnées par des recommandations de commerces de détail) sont versées le 10 de chaque mois qui suit. Par exemple, les commissions gagnées entre le 1er janvier et le 31 janvier sont versées le 10 février. Les primes promotionnelles gagnées dans le cadre de l&#39;atteinte d&#39;objectifs spécifiques définis par Tranont sont versées une fois les objectifs bien atteints selon Tranont.</p>
+      			        </div>
+      			        <h3>Y a-t-il des frais pour le paiement de ma commission?</h3>
+      			        <div class="accordion_container">
+      			            <p>Oui. Des frais de 3,00 $ seront facturés pour chaque réception de paiement de commission. Ces frais seront facturés aussi bien dans le cas de chèques ordinaires que lors des dépôts sur les comptes ProPay.</p>
+      			        </div>
+      			        <h3>Est-il possible de progresser dans les rangs uniquement en recommandant les services et d&#39;accroître le PV sans GV?</h3>
+      			        <div class="accordion_container">
+      			            <p>Non, il n&#39;est absolument pas possible de progresser dans les rangs sans disposer de 3 parrains personnels et sans accroître le volume de groupe.</p>
+      			        </div>
+      			        <h3>La planification de patrimoine entre-t-elle dans le calcul de mon volume personnel (PV) ou du volume de groupe (GV)?</h3>
+      			        <div class="accordion_container">
+      			            <p>Non. La planification de patrimoine est un produit de Tranont Life, LLC et n&#39;entre pas dans le calcul du volume personnel ou de groupe.</p>
+      			        </div>
+      			        <h3>Dois-je acheter des produits CORE pour être rémunéré dans le cas de ma clientèle externe?</h3>
+      			        <div class="accordion_container">
+      			            <p>Non. Vous percevrez toute commission ou prime gagnée un mois donné si votre PV est de 100PV.</p>
+      			        </div>
+      			    </div>
+      			<h2>Services de détail</h2>
+      			    <div class="accordion_container">
+      			        <h3>J&#39;ai saisi une recommandation à un détaillant partenaire sous mon numéro d&#39;identification Tranont. Puis-je modifier la recommandation à un autre numéro d&#39;identification d&#39;associé afin qu&#39;une autre personne puisse percevoir le paiement sur ce compte?</h3>
+      			        <div class="accordion_container">
+      			            <p>Non. Sauf cas particulier relatif au système de traitement national, il n&#39;est plus possible de modifier le numéro d&#39;identification d&#39;une recommandation une fois celle-ci clôturée par le détaillant partenaire.</p>
+      			        </div>
+      			        <h3>J&#39;ai saisi une recommandation à un des détaillants partenaires mais n&#39;ai toujours pas reçu de notification. Que dois-je faire?</h3>
+      			        <div class="accordion_container">
+      			            <p>N&#39;hésitez pas à contacter le détaillant partenaire en question ou les services aux associés au 800 973-3715 pour de l&#39;aide.</p>
+      			        </div>
+      			        <h3>Quel est le délai à prévoir entre le moment de clôture d&#39;une recommandation et la réception de ma commission?</h3>
+      			        <div class="accordion_container">
+      			            <p>Il faut compter 1 à 3 cycles de commissions, selon le service de détail.</p>
+      			        </div>
+      			    </div>
+      			</div><!-- #nestedAccordion -->
+        </div>
+        <div class="row" id="blog">
+          <div class="col-xs-12">
+            <hr class="hr-top"/>
+              <h3 class="page-headers">Blogue</h3>
+            <hr class="hr-bottom"/>
+          </div>
+        </div>
+        <div class="row bottom-row">
+          <div class="col-xs-12"><iframe src="https://tranontmarketing.blogspot.com" width="100%" height="500"></iframe></div>
+        </div>
+      </div>
+      <!-- END Main Content -->
+
+      <!-- BEGIN Footer -->
+	    <div class="container">
+	    	<div class="row footer">
+          <div class="col-xs-2"><span class="footer-address"> 8871 S. Sandy Pkwy<br/> Suite 200<br/> Sandy, UT 84070 </span></div>
+          <div class="col-xs-3"><span class="footer-schedule"> <strong>Numéro sans frais:</strong> 800.973.3715<br/><strong>Télécopieur:</strong> 801.384.7143<br/><strong>Courriel:</strong> support@tranont.com </span></div>
+          <div class="col-xs-3"><span class="footer-schedule"> Lundi au vendredi: 8 h à 18 h<br/> Fermé le samedi et le dimanche<br/><em>heure des Rocheuses</em> </span></div>
+          <div class="col-xs-1">
+          </div>
+          <div class="col-xs-3"><strong>Restez connecté:</strong><br/><ul class="socialmedia-icons" id="socialmedia-icons-lg">
+              <li><a href="https://www.facebook.com/tranontofficial/"><i class="fa fa-lg fa-facebook"></i></a></li>
+              <li><a href="https://twitter.com/tranont"><i class="fa fa-lg fa-twitter"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/tranont"><i class="fa fa-lg fa-linkedin"></i></a></li>
+              <li><a href="https://www.pinterest.com/tranont/"><i class="fa fa-lg fa-pinterest"></i></a></li>
+            </ul>
+          </div>
+	    	</div>
+	    </div>
+      <!-- END Footer -->
+	    <script src="main.js"></script>
+    </body>
+</html>

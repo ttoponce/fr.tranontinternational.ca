@@ -1,0 +1,669 @@
+<!DOCTYPE HTML>
+<html lang="fr-ca">
+    <head>
+		<title>Tranont | Événements</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="shortcut icon" href="https://s3-us-west-2.amazonaws.com/cont.training/Images/201612_tranont_favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+      // Script for Google Analytics
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-84500736-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+		<style>
+    /**** BEGIN Navbar Stylings ****/
+    ul li img {
+      width: 30px;
+    }
+    .dropdown .dropdown-menu {
+        -webkit-transition: all;
+        -moz-transition: all;
+        -ms-transition: all;
+        -o-transition: all;
+        transition: all;
+
+        max-height: 0;
+        display: block;
+        overflow: hidden;
+        opacity: 0;
+    }
+    .dropdown.open .dropdown-menu {
+        max-height: 300px;
+        opacity: 1;
+        width: 285px;
+    }
+    .dropdown-header {
+      padding: 5px 10px 2px 10px;
+      font-weight: bold;
+    }
+    .dropdown-menu > li > a {
+      padding: 3px 11px;
+      color: #555555;
+      font-size: 11px;
+    }
+    .dropdown-menu .divider {
+      margin: 0;
+    }
+    .form-control {
+      border-radius: 0;
+    }
+    .join-text {
+      margin-left: 0px;
+    }
+    .nav>li>a {
+      padding: 15px 12px;
+    }
+    .navbar {
+      cursor: pointer;
+        margin-bottom: 0;
+    }
+    .navbar-default {
+      background-color: #ffffff;
+    }
+    .navbar-default .navbar-nav>.open>a, .navbar-default .navbar>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+      color: #ffffff;
+      background-color: #05538a;
+      cursor: pointer;
+    }
+    .navbar-brand {
+      padding: 10px 15px;
+    }
+    .navbar-brand img {
+      width: 125px;
+      border: none;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar-form {
+      float: right;
+      padding: 0;
+    }
+    .navbar-nav {
+      font-size: 11px;
+      letter-spacing: 2px;
+    }
+    .navbar-nav>li>.dropdown-menu {
+      padding: 0;
+    }
+    .pull-right {
+      width: 210px;
+    }
+    #associate-login {
+      color: #777777;
+      transition: color .1s;
+    }
+    #associate-login:hover {
+      color: #05538a;
+    }
+    #join-tranont {
+      color: #05538a;
+      transition: color .1s;
+    }
+    #join-tranont:hover {
+      color: #777777;
+    }
+    #join {
+      color: #05538a;
+      transition: color .1s;
+    }
+    #join:hover {
+      color: #777777;
+    }
+    @media only screen and (max-width: 1200px) {
+      .join-text {
+        margin-left: 0px;
+      }
+      .nav > li > a {
+        padding: 15px 5px;
+      }
+      .pull-right {
+        width: 123px;
+      }
+    }
+    @media only screen and (max-width: 1000px) {
+      #join {
+        display: block;
+      }
+      #join-tranont {
+        display: none;
+      }
+    }
+    @media only screen and (max-width: 991px) {
+      .join-text {
+        margin-left: 0;
+      }
+      .nav > li > a {
+        padding: 15px 2px;
+      }
+      .navbar-brand {
+        padding: 10px 5px;
+      }
+      .navbar-form {
+        width: 90px;
+      }
+      .navbar-nav {
+        letter-spacing: 1px;
+      }
+      .pull-right {
+        width: 85px;
+      }
+    }
+    @media only screen and (min-width: 992px) {
+      #join-tranont {
+        display: block;
+      }
+      #join {
+        display: none;
+      }
+    }
+    @media only screen and (max-width: 767px) {
+      .dropdown.open .dropdown-menu {
+          width: 100%;
+      }
+      .navbar-form {
+        width: auto;
+        margin: 0 15px 15px 15px;
+      }
+      .nav > li > a {
+        padding: 15px 10px;
+      }
+      .navbar-brand {
+        padding: 10px 15px;
+      }
+      .navbar-nav {
+        letter-spacing: 2px;
+      }
+      .pull-right {
+        width: auto;
+      }
+      #join-tranont {
+        display: block;
+      }
+      #join {
+        display: none;
+      }
+    }
+    /**** END Navbar Stylings ****/
+
+      /**** BEGIN Main Page Stylings ****/
+      a {
+        cursor: pointer;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+      a:focus {
+        text-decoration: none;
+      }
+      body {
+        font-family: "Helvetica Neue", "Gill Sans", sans-serif;
+      }
+      h4 {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
+        margin-top: 2%;
+      }
+      .blue-links {
+        font-weight: bold;
+        color: #05538a;
+      }
+      .blue-links:hover {
+        color: #337ab7;
+      }
+      .bottom-row {
+        margin-bottom: 2.5%;
+      }
+      .btn-info {
+        color: #05538a;
+        background-color: #ffffff;
+        border: 2px solid #05538a;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        border-radius: 0;
+        position: absolute;
+        padding: 6.5px 12px;
+        font-weight: bold;
+      }
+      .btn-info:hover {
+        background-color: #05538a;
+        color: #ffffff;
+        border-color: #05538a;
+      }
+      .col-xs-12 {
+        padding: 0;
+      }
+      .col-xs-12 iframe {
+        width: 100%;
+        margin: 0 auto;
+      }
+      .div-title {
+        margin: 0;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        letter-spacing: 3px;
+        font-size: 16px;
+      }
+      .filler-text {
+        font-size: 12px;
+        color: #444444;
+        margin-left: 12%;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      .glyphicon-triangle-bottom {
+        font-size: 65%;
+        top: 0;
+        color: #ffffff;
+      }
+      .glyphicon-triangle-right {
+        font-size: 65%;
+        top: 0;
+        color: #ffffff;
+      }
+      .hr-top {
+        border-color: #888888;
+        margin-top: 5%;
+        width: 80%;
+      }
+      .hr-bottom {
+        border-color: #888888;
+        width: 80%;
+      }
+      .international-event-img {
+        width: 100%;
+      }
+      .page-headers {
+        text-transform: uppercase;
+        font-size: 21px;
+        color: #000001;
+        text-align: center;
+        letter-spacing: 4px;
+        margin-top: 25px;
+      }
+      .panel-heading {
+        background-color: #05538a;
+        margin-left: 150px;
+        border-radius: 0;
+      }
+      .panel-body {
+        border: none;
+        background-color: #eeeeee;
+        color: #05538a;
+        text-transform: uppercase;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+      .panel-body h4 {
+        letter-spacing: 2px;
+        font-weight: bold;
+        margin-top: 15px;
+      }
+      .panel-body h5 {
+        letter-spacing: 2px;
+        font-weight: bold;
+        margin-bottom: 3px;
+      }
+      .panel-body h6 {
+        font-weight: 500;
+        line-height: 18px;
+        font-size: 12px;
+        letter-spacing: 1px;
+        margin-bottom: 0;
+      }
+      .panel-group .panel {
+        border-radius: 0;
+        border: none;
+      }
+      .sub-nav .col-xs-3 {
+        border: 2px solid #05538a;
+        background-color: #ffffff;
+        color: #05538a;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        text-align: center;
+        padding: 5px 0 5px 0;
+        font-weight: bold;
+        font-size: 16px;
+      }
+      .sub-nav .col-xs-3:hover {
+        background-color: #05538a;
+        color: #ffffff;
+      }
+      .sub-nav .col-xs-3 p {
+        margin: 0;
+      }
+      .ticket-text {
+        font-size: 12px;
+        letter-spacing: 1px;
+      }
+      .top-img {
+        width: 100%;
+        z-index: -1;
+      }
+      .top-img-header {
+        color: #ffffff;
+        position: absolute;
+        letter-spacing: 15px;
+        text-transform: uppercase;
+        font-size: 48px;
+        width: 100%;
+        margin-top: 14%;
+        text-align: center;
+      }
+      .top-img-text {
+        color: #ffffff;
+        position: absolute;
+        text-transform: uppercase;
+        letter-spacing: 8px;
+        font-weight: 200;
+        font-size: 21px;
+        width: 100%;
+        margin-top: 21%;
+        text-align: center;
+      }
+      #text-bottom {
+        margin-bottom: 15px;
+      }
+      @media only screen and (max-width: 1000px) {
+        .sub-nav .col-xs-3 {
+          font-size: 12px;
+        }
+      }
+      @media only screen and (max-width: 670px) {
+        .sub-nav .col-xs-3 {
+          letter-spacing: 2px;
+        }
+        .top-img-header {
+          font-size: 36px;
+          margin-top: 15%;
+        }
+        .top-img-text {
+          font-size: 18px;
+          margin-top: 23%;
+        }
+        @media only screen and (max-width: 535px) {
+          .sub-nav .col-xs-3 {
+            letter-spacing: 1px;
+            font-size: 10px;
+          }
+          .top-img-header {
+            font-size: 25px;
+            margin-top: 17%;
+          }
+          .top-img-text {
+            font-size: 15px;
+            margin-top: 24%;
+            letter-spacing: 5px;
+          }
+        }
+        @media only screen and (max-width: 400px) {
+          .sub-nav .col-xs-3 {
+            font-size: 8px;
+          }
+          .top-img-header {
+            font-size: 21px;
+            margin-top: 18%;
+          }
+          .top-img-text {
+            font-size: 12px;
+            margin-top: 25%;
+            letter-spacing: 4px;
+          }
+        }
+      }
+      /**** END Main Page Stylings ****/
+
+      /**** BEGIN Footer Stylings ****/
+      ul li a i {
+        background: #888888;
+        color: #ffffff;
+        width: 30px;
+        height: 30px;
+        border-radius: 20px;
+        font-size: 19px !important;
+        text-align: center;
+        margin-right: 10px;
+        padding-top: 23%;
+        padding-right: 1px;
+        transition: background-color .5s;
+      }
+      ul li a i:hover {
+        background-color: #05538a;
+      }
+      .footer {
+        background-color: #ffffff;
+        color: #aaaaaa;
+        border: 1px solid #cccccc;
+        padding-top: 7px;
+        padding-bottom: 1%;
+      }
+      .socialmedia-icons {
+        overflow: auto;
+        padding-left: 0;
+      }
+      .socialmedia-icons li {
+        list-style-type: none;
+        float: left;
+      }
+      @media only screen and (max-width: 992px) {
+        ul li a i {
+          width: 30px;
+          height: 30px;
+          border-radius: 25px;
+          font-size: 19px !important;
+          margin-right: 7px;
+          margin-top: 7px;
+        }
+        .footer {
+          padding-bottom: 7px;
+        }
+      }
+      @media only screen and (max-width: 713px) {
+        ul li a i {
+          margin-top: 7px;
+          padding-left: 1px;
+        }
+        .footer {
+          font-size: 11px;
+        }
+      }
+      @media only screen and (max-width: 417px) {
+        ul li a i {
+          margin-top: 4px;
+          margin-right: 4px;
+          font-size: 18px !important;
+          padding-top: 9px;
+          padding-left: 3px;
+        }
+        .footer {
+          font-size: 9px;
+          padding: 0 5px;
+        }
+        .footer .col-xs-3 {
+          padding-right: 0;
+          padding-left: 0;
+        }
+      }
+      /**** END Footer Stylings ****/
+		</style>
+
+    </head>
+    <body>
+      <!-- BEGIN Navbar -->
+      <nav class="navbar navbar-default navbar-fixed-top">
+  		  <div class="container">
+  		    <div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Navigation à bascule</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="http://tranontinternational.ca/"><img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/Tranont_Logo-horiz.jpg"/></a></div>
+          <div class="navbar-collapse collapse">
+    		    <ul class="nav navbar-nav">
+    		      <li class="dropdown"><a class="dropdown-toggle disabled" data-toggle="dropdown" href="http://fr.tranontinternational.ca/company.html">SOCIÉTÉ</a>
+                <ul class="dropdown-menu">
+    		      		<li><a href="http://fr.tranontinternational.ca/company.html#associates">ASSOCIÉS</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/company.html#foundation">FONDATION</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/company.html#investor-relations">RELATIONS AVEC LES INVESTISSEURS</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/company.html#media-kit">TROUSSE MÉDIA </a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/executives.html">DIRIGEANTS</a></li>
+      		      	<li><a href="http://fr.tranontinternational.ca/aboutus.html">À PROPOS DE NOUS</a></li>
+      		      	<li><a href="http://fr.tranontinternational.ca/company.html#supportfaq">ASSISTANCE</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/company.html#supportfaq">FOIRE AUX QUESTIONS</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/company.html#blog">BLOGUE</a></li>
+    		      	</ul>
+    		      </li>
+    		      <li class="dropdown"><a class="dropdown-toggle disabled" data-toggle="dropdown" href="http://fr.tranontinternational.ca/products.html">PRODUITS</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-header">CORE</li>
+    		      		<li><a href="http://fr.tranontinternational.ca/oneview.html">ONEVIEW</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/defend.html">DEFEND</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/taxbot.html">TAXBOT</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/legal.html">LÉGAL</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/creditservices.html">SERVICES DE CRÉDIT</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/taxservices.html">SERVICES FISCAUX</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">OUTILS COMMERCIAUX</li>
+    		      		<li><a href="http://fr.tranontinternational.ca/marketingplatform.html">PLATEFORME COMMERCIALE</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/associatecenter.html">CENTRE DES ASSOCIÉS</a></li>
+                  <li class="divider"></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/retailservices.html">SERVICES DE DÉTAIL</a></li>
+    		      	</ul>
+    		      </li>
+    		      <li class="dropdown"><a class="dropdown-toggle disabled" data-toggle="dropdown" href="http://fr.tranontinternational.ca/compensation.html">RÉMUNÉRATION</a>
+                <ul class="dropdown-menu">
+    		      		<li><a href="http://fr.tranontinternational.ca/compensation.html#comp-plan">RÉGIME DE RÉMUNÉRATION</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/compensation.html#why-tranont">POURQUOI CHOISIR TRANONT</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/compensation.html#current-promos">PROMOTIONS ACTUELLES</a></li>
+                  <li><a href="http://fr.tranontinternational.ca/retailservices.html">SERVICES DE DÉTAIL</a></li>
+    		      	</ul>
+    		      </li>
+    		      <li class="dropdown"><a class="dropdown-toggle disabled" data-toggle="dropdown" href="http://fr.tranontinternational.ca/events.html">ÉVÉNEMENTS</a>
+                <ul class="dropdown-menu">
+    		      		<li><a href="http://fr.tranontinternational.ca/events.html#national">ÉVÉNEMENTS NATIONAUX</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/events.html#international">ÉVÉNEMENTS INTERNATIONAUX</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/events.html#regional">ÉVÉNEMENTS RÉGIONAUX</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/events.html#calendar">CALENDRIER DES ÉVÉNEMENTS</a></li>
+    		      	</ul>
+    		      </li>
+              <li class="dropdown"><a class="dropdown-toggle disabled" data-toggle="dropdown"><img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/canadian-flag-small.png" alt="Drapeau canadien"/></a>
+                <ul class="dropdown-menu">
+                  <li><a href="http://tranontinternational.com/events.html"><img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/canadian-flag-small.png" alt="Drapeau canadien"/> CA (ANGLAIS)</a></li>
+                  <li><a href="http://tranont.com/events.html"><img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/united-states-flag.png" alt="Drapeau américain"/> É.-U.</a></li>
+                </ul>
+              </li>
+    		      <li><a class="join-text" href="https://member.tranont.com/signup"><span id="join-tranont"><strong>REJOINDRE TRANONT</strong></span><span id="join"><strong>REJOINDRE</strong></span></a></li>
+    		      <li><a href="http://members.tranont.com/login"><span id="associate-login"><strong>CONNEXION</strong></span></a></li>
+    		    </ul>
+            <div class="dropdown pull-right">
+              <form class="navbar-form" role="search">
+                <div class="input-group"><input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term"><div class="input-group-btn" id="srch-btn"><button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button></div>
+                </div>
+              </form>
+            </div>
+          </div>
+  		  </div>
+  		</nav>
+      <!-- END Navbar -->
+
+      <!-- BEGIN Main Content -->
+      <div class="container main">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2 class="top-img-header">Événements</h2>
+            <h4 class="top-img-text">Célébrer et motiver</h4><img class="top-img" src="https://s3-us-west-2.amazonaws.com/cont.training/Images/201611_Events_topmod_01.jpg" alt="Vue semi-aérienne d&#39;un navire de croisière à un port près de quelques montagnes"/></div>
+        </div>
+        <div class="row sub-nav"><a href="#national"><div class="col-xs-3">
+            <p>Événements<br/>nationaux</p>
+          </div></a> <a href="#international"><div class="col-xs-3">
+            <p>Événements<br/>internationaux</p>
+          </div></a> <a href="#regional"><div class="col-xs-3">
+            <p>Événements<br/>régionaux</p>
+          </div></a> <a href="#calendar"><div class="col-xs-3">
+            <p>Calendrier<br/>des événements</p>
+          </div></a></div>
+        <div class="row" id="national">
+          <div class="col-xs-12">
+            <hr class="hr-top"/>
+              <h3 class="page-headers">Événements nationaux</h3>
+            <hr class="hr-bottom"/>
+            <h4>Événements Jeep</h4>
+            <p class="filler-text"><em>Il n&#39;y a actuellement aucun événement Jeep prévu.</em></p>
+            <h4>Autres événements nationaux</h4>
+            <p class="filler-text"><em>Il n&#39;y a actuellement aucun événement national prévu.</em></p>
+          </div>
+        </div>
+        <div class="row" id="international">
+          <div class="col-xs-12">
+            <hr class="hr-top"/>
+              <h3 class="page-headers">Événements internationaux</h3>
+            <hr class="hr-bottom"/><img class="international-event-img" src="https://s3-us-west-2.amazonaws.com/cont.training/Images/201611_Events_intnleventsmod_01.jpg" alt="Convention internationale Tranont de 2017 - Andy Andrews, auteur à succès du New York Times, sera le conférencier principal - 6-7 janvier 2017 - Long Beach Convention Center - Long Beach, Californie - Tranont bénéficie de tarifs préférentiels dans deux hôtels à Long Beach - Renaissance® Long Beach - 169,00 $ par nuit - Courtyard® Marriott® - 159,00 $ par nuit"/> <a href="https://member.tranont.com/sc/basepages/sc_home.asp?cat=home" class="btn btn-info" role="button">Acheter des billets</a><div class="panel-group">
+              <div class="panel panel-default"><a data-toggle="collapse" href="#collapse"><div class="panel-heading">
+                  <h4 class="div-title">Détails des événements <i class="glyphicon glyphicon-triangle-right"></i></h4>
+                </div></a><div id="collapse" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <h4>89,00 $ par personne</h4>
+                    <h6>TOUTES LES VENTES DE BILLETS SONT FINALES, NON REMBOURSABLES ET NON TRANSFÉRABLES. LES ASSOCIÉS QUI SE SONT INSCRITS À CET ÉVÉNEMENT, MAIS QUI NE PEUVENT PAS Y ASSISTER, PEUVENT UTILISER CET ACHAT POUR UN ÉVÉNEMENT FUTUR SUR RÉCEPTION PAR TRANONT D&#39;UN AVIS PRÉALABLE D&#39;ICI AU 10 DÉCEMBRE 2016.</h6>
+                    <h4>AÉROPORTS DESSERVANT LONG BEACH :</h4>
+                    <h5>AÉROPORT DE LONG BEACH (LGB)</h5><span class="ticket-text"> JETBLUE AIRWAYS<br/> ALASKA AIRLINES<br/> DELTA AIRLINES<br/> US AIRWAYS </span><h5>LOS ANGELES INTERNATIONAL AIRPORT (LAX)</h5><span class="ticket-text">LES GRANDES COMPAGNIES AÉRIENNES DESSERVENT LAX</span><h5>AÉROPORT JOHN WAYNE DU COMTÉ D&#39;ORANGE (SNA)</h5><span class="ticket-text">LES GRANDES COMPAGNIES AÉRIENNES DESSERVENT SNA</span><h5>RÉSERVEZ DÈS MAINTENANT! RÉSERVEZ LE PLUS TÔT POSSIBLE POUR OBTENIR LE MEILLEUR PRIX.</h5>
+                    <h4>INFORMATIONS SUR LA NAVETTE AÉROPORT :</h4>
+                    <h5>DE LONG BEACH</h5><span class="ticket-text">TAXI - LE TARIF SE SITUE ENTRE 20,00 $ ET 25,00 $</span><h5>DE LAX</h5><span class="ticket-text">FLYAWAY - C&#39;EST L&#39;OPTION LA PLUS ÉCONOMIQUE À 9 $ LE TRAJET. L&#39;EMPLACEMENT D&#39;ARRIVÉE ET DE DÉPART SE TROUVE DERRIÈRE L&#39;HÔTEL RENAISSANCE. LES ARRIVÉES ET DÉPARTS SE PRODUISENT UNE FOIS PAR HEURE ENTRE 5 H 30 ET 21 H 30. IL S&#39;AGIT D&#39;UN SERVICE RÉGULIER À HORAIRE FIXE.  CLIQUEZ ICI POUR PLUS DE DÉTAILS.</span><h5>DESSERVANT LES TROIS AÉROPORTS</h5><span class="ticket-text"> KARMEL SHUTTLE SERVICE, INC. - CONTRAIREMENT AUX AUTRES SERVICES DE NAVETTE, ILS OFFRENT LEUR SERVICE SUR RÉSERVATION SEULEMENT. OFFRENT UN SERVICE DE MINIBUS PARTAGÉ ET PRIVÉ. ILS NE ROULENT PAS EN ROND EN VUE DE RAMASSER D&#39;AUTRES PERSONNES. ILS NE S&#39;ARRÊTENT PAS À PLUSIEURS REPRISES SUR LE TRAJET VERS LONG BEACH.<br/> ILS OFFRENT ÉGALEMENT UN LIEN RAPIDE. LORSQUE VOUS EFFECTUEZ VOTRE RÉSERVATION, LE PARTICIPANT COMMUNIQUERA SON NUMÉRO DE CELLULAIRE. LE SYSTÈME DE SUIVI DE VOL DE KARMEL SHUTTLE SERVICE SURVEILLERA VOTRE VOL. À L&#39;ATTERRISSAGE, VOUS RECEVREZ UNE ALERTE PAR TEXTO DE KARMEL. UNE FOIS QUE VOS BAGAGES RÉCUPÉRÉS, VOUS N&#39;AVEZ QU&#39;À CLIQUER SUR LE LIEN RAPIDE. LEUR BUREAU D&#39;EXPÉDITION VOUS NOTIFIERA LE NUMÉRO DE MINIBUS ET VOUS FERA SAVOIR OÙ VOUS RENDRE POUR RENCONTRER VOTRE CHAUFFEUR.<br/> VOICI UN LIEN WEB PERSONNALISÉ À DESTINATION DES PARTICIPANTS VENANT DE TRANONT UNIQUEMENT. OFFRE DE 21 $ PAR PERSONNE À PARTIR DES AÉROPORTS LAX ET SNA. 20 $ PAR PERSONNE DE L&#39;AÉEROPORT LONG BEACH AUX HÔTELS À LONG BEACH. (LES TARIFS CONCERNENT UN ALLER SIMPLE). </span><h5>LOCATION DE VOITURE - VOUS N&#39;AVEZ PAS BESOIN DE LOUER UNE VOITURE. LE CENTRE DES CONVENTIONS, LE CENTRE-VILLE DE LONG BEACH ET UNE MULTITUDE D&#39;EXCELLENTS RESTAURANTS SONT ACCESSIBLES À PIED DE TOUS LES HÔTELS OFFRANT DES TARIFS PRÉFÉRENTIELS!</h5>
+                    <h4>RÉSERVATIONS AUPRÈS DES HÔTELS OFFRANT DES TARIFS PRÉFÉRENTIELS :</h4><span class="ticket-text">NOUS AVONS DES TARIFS PRÉFÉRENTIELS AVEC TROIS HÔTELS À LONG BEACH. NOUS AVONS NÉGOCIÉ DES TARIFS SPÉCIAUX POUR TRANONT. IL Y A UN NOMBRE LIMITÉ DE CHAMBRES À NOS TARIFS PRÉFÉRENTIELS DONC RÉSERVEZ DÈS MAINTENANT!</span><h5>BEST WESTERN PLUS (PETIT-DÉJEUNER INCLUS) - 149,00 $ PAR NUIT</h5><span class="ticket-text"> IL EXISTE DEUX MANIÈRES D&#39;EFFECTUER VOS RÉSERVATIONS :<ol>
+                        <li>CONTACTER DIRECTEMENT L&#39;HÔTEL AU 562 285-0281. MENTIONNEZ L&#39;IDENTIFIANT DE NOTRE GROUPE « CONVENTION NATIONALE TRANONT JANVIER 2017 ». CARTE DE CRÉDIT REQUISE AU MOMENT DE LA RÉSERVATION.</li>
+                        <li>CLIQUER SUR <a href="" class="blue-links">CE LIEN</a>.</li>
+                      </ol></span><h5>COURTYARD BY MARRIOTT - 159,00 $ PAR NUIT</h5><span class="ticket-text"> IL EXISTE DEUX MANIÈRES D&#39;EFFECTUER VOS RÉSERVATIONS :<ol>
+                        <li>CONTACTER DIRECTEMENT L&#39;HÔTEL AU 800 228-9290. MENTIONNEZ L&#39;IDENTIFIANT DE NOTRE GROUPE « CONVENTION NATIONALE TRANONT JANVIER 2017 ». CARTE DE CRÉDIT REQUISE AU MOMENT DE LA RÉSERVATION.</li>
+                        <li>CLIQUER SUR <a href="" class="blue-links">CE LIEN</a>.</li>
+                      </ol></span><h5>RENAISSANCE - 169,00 $ PAR NUIT</h5><span class="ticket-text"> IL EXISTE DEUX MANIÈRES D&#39;EFFECTUER VOS RÉSERVATIONS :<ol>
+                        <li>CONTACTER DIRECTEMENT L&#39;HÔTEL AU 888 236-2427. MENTIONNEZ L&#39;IDENTIFIANT DE NOTRE GROUPE « CONVENTION NATIONALE TRANONT JANVIER 2017 ». CARTE DE CRÉDIT REQUISE AU MOMENT DE LA RÉSERVATION.</li>
+                        <li>CLIQUER SUR <a href="" class="blue-links">CE LIEN</a>.</li>
+                      </ol></span><h5 id="text-bottom"><em>NOMBRE DE CHAMBRES TRÈS LIMITÉ DANS LES TROIS HÔTELS, DONC RÉSERVEZ DÈS MAINTENANT.</em></h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="regional">
+          <div class="col-xs-12">
+            <hr class="hr-top"/>
+              <h3 class="page-headers">Événements régionaux</h3>
+            <hr class="hr-bottom"/>
+            <p class="filler-text"><em>Veuillez consulter le calendrier des événements ci-dessous pour connaître les événements régionaux prévus.</em></p>
+          </div>
+        </div>
+        <div class="row bottom-row" id="calendar">
+          <div class="col-xs-12">
+            <hr class="hr-top"/>
+              <h3 class="page-headers">Calendrier des événements</h3>
+            <hr class="hr-bottom"/><iframe src="https://calendar.google.com/calendar/embed?src=tranontevents%40gmail.com&ctz=America/Denver" style="border: 0;" width="800" height="600" frameborder="0" scrolling="no"></iframe></div>
+        </div>
+      </div>
+      <!-- END Main Content -->
+
+      <!-- BEGIN Footer -->
+	    <div class="container">
+	    	<div class="row footer">
+          <div class="col-xs-2"><span class="footer-address"> 8871 S. Sandy Pkwy<br/> Suite 200<br/> Sandy, UT 84070 </span></div>
+          <div class="col-xs-3"><span class="footer-schedule"> <strong>Numéro sans frais:</strong> 800.973.3715<br/><strong>Télécopieur:</strong> 801.384.7143<br/><strong>Courriel:</strong> support@tranont.com </span></div>
+          <div class="col-xs-3"><span class="footer-schedule"> Lundi au vendredi: 8 h à 18 h<br/> Fermé le samedi et le dimanche<br/><em>heure des Rocheuses</em> </span></div>
+          <div class="col-xs-1">
+          </div>
+          <div class="col-xs-3"><strong>Restez connecté:</strong><br/><ul class="socialmedia-icons" id="socialmedia-icons-lg">
+              <li><a href="https://www.facebook.com/tranontofficial/"><i class="fa fa-lg fa-facebook"></i></a></li>
+              <li><a href="https://twitter.com/tranont"><i class="fa fa-lg fa-twitter"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/tranont"><i class="fa fa-lg fa-linkedin"></i></a></li>
+              <li><a href="https://www.pinterest.com/tranont/"><i class="fa fa-lg fa-pinterest"></i></a></li>
+            </ul>
+          </div>
+	    	</div>
+	    </div>
+      <!-- END Footer -->
+	    <script src="main.js"></script>
+    </body>
+</html>

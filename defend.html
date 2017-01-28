@@ -1,0 +1,1239 @@
+<!DOCTYPE HTML>
+<html lang="fr-ca">
+    <head>
+		<title>Tranont | Defend</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="shortcut icon" href="https://s3-us-west-2.amazonaws.com/cont.training/Images/201612_tranont_favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+      // Script for Google Analytics
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-84500736-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+		<style>
+    /**** BEGIN Navbar Stylings ****/
+    ul li img {
+      width: 30px;
+    }
+    .dropdown .dropdown-menu {
+        -webkit-transition: all;
+        -moz-transition: all;
+        -ms-transition: all;
+        -o-transition: all;
+        transition: all;
+
+        max-height: 0;
+        display: block;
+        overflow: hidden;
+        opacity: 0;
+    }
+    .dropdown.open .dropdown-menu {
+        max-height: 300px;
+        opacity: 1;
+        width: 285px;
+    }
+    .dropdown-header {
+      padding: 5px 10px 2px 10px;
+      font-weight: bold;
+    }
+    .dropdown-menu > li > a {
+      padding: 3px 11px;
+      color: #555555;
+      font-size: 11px;
+    }
+    .dropdown-menu .divider {
+      margin: 0;
+    }
+    .form-control {
+      border-radius: 0;
+    }
+    .join-text {
+      margin-left: 0px;
+    }
+    .nav>li>a {
+      padding: 15px 12px;
+    }
+    .navbar {
+      cursor: pointer;
+        margin-bottom: 0;
+    }
+    .navbar-default {
+      background-color: #ffffff;
+    }
+    .navbar-default .navbar-nav>.open>a, .navbar-default .navbar>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+      color: #ffffff;
+      background-color: #05538a;
+      cursor: pointer;
+    }
+    .navbar-brand {
+      padding: 10px 15px;
+    }
+    .navbar-brand img {
+      width: 125px;
+      border: none;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar-form {
+      float: right;
+      padding: 0;
+    }
+    .navbar-nav {
+      font-size: 11px;
+      letter-spacing: 2px;
+    }
+    .navbar-nav>li>.dropdown-menu {
+      padding: 0;
+    }
+    .pull-right {
+      width: 210px;
+    }
+    #associate-login {
+      color: #777777;
+      transition: color .1s;
+    }
+    #associate-login:hover {
+      color: #05538a;
+    }
+    #join-tranont {
+      color: #05538a;
+      transition: color .1s;
+    }
+    #join-tranont:hover {
+      color: #777777;
+    }
+    #join {
+      color: #05538a;
+      transition: color .1s;
+    }
+    #join:hover {
+      color: #777777;
+    }
+    @media only screen and (max-width: 1200px) {
+      .join-text {
+        margin-left: 0px;
+      }
+      .nav > li > a {
+        padding: 15px 5px;
+      }
+      .pull-right {
+        width: 123px;
+      }
+    }
+    @media only screen and (max-width: 1000px) {
+      #join {
+        display: block;
+      }
+      #join-tranont {
+        display: none;
+      }
+    }
+    @media only screen and (max-width: 991px) {
+      .join-text {
+        margin-left: 0;
+      }
+      .nav > li > a {
+        padding: 15px 2px;
+      }
+      .navbar-nav li {
+        letter-spacing: 1px !important;
+      }
+      .navbar-brand {
+        padding: 10px 5px;
+      }
+      .navbar-form {
+        width: 90px;
+      }
+      .navbar-nav {
+        letter-spacing: 1px !important;
+      }
+      .pull-right {
+        width: 85px;
+      }
+    }
+    @media only screen and (min-width: 992px) {
+      #join-tranont {
+        display: block;
+      }
+      #join {
+        display: none;
+      }
+    }
+    @media only screen and (max-width: 767px) {
+      .dropdown.open .dropdown-menu {
+          width: 100%;
+      }
+      .navbar-form {
+        width: auto;
+        margin: 0 15px 15px 15px;
+      }
+      .nav > li > a {
+        padding: 15px 10px;
+      }
+      .navbar-brand {
+        padding: 10px 15px;
+      }
+      .navbar-nav {
+        letter-spacing: 2px;
+      }
+      .navbar-nav li {
+        letter-spacing: 2px !important;
+      }
+      .pull-right {
+        width: auto;
+      }
+      #join-tranont {
+        display: block;
+      }
+      #join {
+        display: none;
+      }
+    }
+    /**** END Navbar Stylings ****/
+
+      /**** BEGIN Main Page Stylings ****/
+      a {
+        cursor: pointer;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+      a:focus {
+        text-decoration: none;
+      }
+      body {
+        font-family: "Helvetica Neue", "Gill Sans", sans-serif;
+      }
+      h3, h4, h5, li {
+        letter-spacing: 2px;
+      }
+      p, h3, h4, h5, li {
+        text-transform: uppercase;
+      }
+      .bottom-row {
+        margin-bottom: 2.5%;
+      }
+      .center {
+        text-align: center;
+      }
+      .center-element {
+        display: block;
+        margin: 0 auto;
+      }
+      .col-xs-2 img {
+        display: block;
+        margin: 10% auto;
+      }
+      .col-xs-3 h4 {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 5%;
+      }
+      .col-xs-3 img {
+        width: 100%;
+      }
+      .col-xs-4 {
+        padding: 0;
+      }
+      .col-xs-4 h4 {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 20px;
+      }
+      .col-xs-3 p, .col-xs-9 p, .col-xs-6 p, .col-xs-10 h2, .col-xs-6 h4, .col-xs-10 p, .col-xs-12 h3, .col-xs-12 h4, .col-xs-12 p {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      .col-xs-10 .col-xs-3, .col-xs-10 .col-xs-6, .col-xs-10 .col-xs-2, .col-xs-12 {
+        padding: 0;
+      }
+      .collapsibale-hr {
+        margin: 20px 10px;
+        border-color: #888b8d;
+      }
+      .dissappearing-br {
+        display: none;
+      }
+      .fluid-width-video-wrapper {
+        width: 70%;
+        position: relative;
+        padding: 39.4% 0 0 0;
+        margin: 1% 0 0 15%;
+      }
+      .fluid-width-video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .glyphicon-triangle-bottom {
+        font-size: 65%;
+        top: 0;
+        color: #333333;
+      }
+      .glyphicon-triangle-right {
+        font-size: 65%;
+        top: 0;
+        color: #333333;
+      }
+      .hr-top {
+        border-color: #888888;
+        margin-top: 5%;
+        width: 80%;
+      }
+      .hr-bottom {
+        border-color: #888888;
+        width: 80%;
+      }
+      .leftright-margins {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .leftright-padding {
+        padding: 10px 15px 0 15px;
+      }
+      .margin-sides {
+        margin: 0 8%;
+      }
+      .no-top-border {
+        border-width: 0px 2px 2px 2px !important;
+      }
+      .panel-group .panel {
+        border-radius: 0;
+        border: none;
+      }
+      .page-headers {
+        text-transform: uppercase;
+        font-size: 21px;
+        color: #000001;
+        text-align: center;
+        letter-spacing: 4px;
+        margin-top: 25px;
+      }
+      .panel-heading {
+        background-color: #05538a;
+        border-radius: 0;
+        padding: 10px;
+      }
+      .panel-heading h4 {
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-size: 20px;
+      }
+      .row iframe {
+        max-width: 100%;
+        margin-bottom: 24px;
+      }
+      .signup-button {
+        margin: 0 auto 15px auto;
+        width: 20%;
+      }
+      .single-line {
+        padding: 11px 0;
+      }
+      .sub-nav .col-xs-4 {
+        border: 2px solid #b61f24;
+        background-color: #ffffff;
+        color: #b61f24;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        text-align: center;
+        padding: 5px 0 5px 0;
+        font-weight: bold;
+        font-size: 16px;
+      }
+      .sub-nav .col-xs-4:hover {
+        background-color: #b61f24;
+        color: #ffffff;
+      }
+      .sub-nav .col-xs-4 p {
+        margin: 0;
+      }
+      .tax-bot {
+        font-size: 36px;
+        color: #ffffff;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: 40%;
+        letter-spacing: 10px !important;
+        left: 1%;
+      }
+      .tax-services {
+        font-size: 36px;
+        color: #ffffff;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: 35%;
+        letter-spacing: 10px !important;
+        left: 1%;
+      }
+      .ticket-text {
+        font-size: 12px;
+        letter-spacing: 1px;
+      }
+      .top-img {
+        width: 100%;
+        z-index: -1;
+      }
+      .top-img-header {
+        color: #ffffff;
+        position: absolute;
+        letter-spacing: 15px;
+        text-transform: uppercase;
+        font-size: 48px;
+        width: 100%;
+        margin-top: 14%;
+        text-align: center;
+      }
+      .top-img-text {
+        color: #ffffff;
+        position: absolute;
+        text-transform: uppercase;
+        letter-spacing: 8px !important;
+        font-weight: 200;
+        font-size: 21px;
+        width: 100%;
+        margin-top: 21%;
+        text-align: center;
+      }
+      .top-padding {
+        padding-top: 1%;
+      }
+      .top-padding-more {
+        padding-top: 3.5%
+      }
+      .top-rows {
+        margin-left: 0;
+      }
+      .width-100 {
+        width: 100%;
+      }
+      #bottom-panel {
+        background-color: #05538a;
+        color: #ffffff;
+        padding: 20px 0 40px 0;
+        border-radius: 0;
+        margin-bottom: 0;
+      }
+      #btn-default {
+        border-radius: 0;
+        color: #333333;
+        background-color: #ffffff;
+        border: 2px solid #333333;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      #btn-default:focus {
+        background-color: #ffffff;
+        border: 2px solid #333333;
+      }
+      #btn-default:hover {
+        background-color: #eeeeee;
+        border: 2px solid #333333;
+      }
+      #computer-protection {
+        margin-top: 1%;
+        border: 2px solid #cccccc;
+        padding: 10px 10px 0 10px;
+        background-color: #efefef;
+      }
+      #id-theft-protection {
+        margin-top: 1%;
+        border: 2px solid #cccccc;
+        padding: 10px 10px 0 10px;
+        background-color: #efefef;
+      }
+      #social-media-monitoring {
+        margin-top: 1%;
+        border: 2px solid #cccccc;
+        padding: 10px 10px 0 10px;
+        background-color: #efefef;
+      }
+      #social-media-monitoring img {
+        width: 20%;
+      }
+      #text-bottom {
+        margin-bottom: 15px;
+      }
+      #top-panel {
+        margin-top: 4%;
+      }
+
+      /**** Begin - FAQ Accordion Stylings ****/
+      #nestedAccordion{
+        width: 98%;
+      }
+      #nestedAccordion h2, #nestedAccordion h3,
+      .accordion_container, #nestedAccordion div{
+        /* reset styles for accordion */
+        margin:0;
+        padding:0;
+        font-family: "Helvetica Neue", "Gill Sans", sans-serif;
+        font-size: 19px;
+        list-style:none;
+      }
+      #nestedAccordion h5 {
+        margin: 0 2% 1% 2%;
+        padding: 0;
+        font-family: "Helvetica Neue", "Gill Sans", sans-serif;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        list-style: none;
+        font-weight: 400;
+        line-height: 21px;
+      }
+      .accordion_container {
+        display:none;
+        color: #888b8d;
+        overflow:hidden;
+      }
+      .accordion_container a {
+      	text-decoration: none;
+      }
+      #nestedAccordion h2{
+        cursor: pointer;
+        color: #888b8d;
+        font-size: 21px;
+        font-weight: 400;
+        padding: 10px 0 10px 10px;
+        margin: 6px 0 5px 0;
+        background-color: #ffffff;
+        border: 4px solid #888b8d;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+      #nestedAccordion h2:focus {
+        border-color: #05538a;
+        color: #05538a;
+      }
+      #nestedAccordion h2:hover {
+        border-color: #05538a;
+        color: #05538a;
+      }
+      #nestedAccordion h3{
+      	line-height: 21px;
+        cursor:pointer;
+        padding:5px 0 5px 15px;
+        color: #999999;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+        background-color: #ffffff;
+        text-transform: uppercase;
+        font-size: 16px;
+        letter-spacing: 2px;
+      }
+      #nestedAccordion h3:hover{
+        color:#222222;
+      }
+      #nestedAccordion h3 + div{
+        background-color:#ffffff;
+        padding: 3px 5px 5px 30px;
+      }
+      #nestedAccordion li{
+        font-weight: 100;
+        color: #000000;
+        font-size: 16px;
+      }
+      /**** End - FAQ Accordion Stylings ****/
+
+      @media only screen and (max-width: 991px) {
+        .top-img-text {
+          margin-top: 22%;
+        }
+      }
+      @media only screen and (max-width: 700px) {
+        .col-xs-3 h4 {
+          font-size: 16px;
+        }
+        .col-xs-4 h4 {
+          font-size: 16px;
+        }
+      }
+      @media only screen and (max-width: 670px) {
+        .top-img-text {
+          margin-top: 22.5%;
+        }
+        .col-xs-3 h4 {
+          font-size: 14px;
+        }
+        .col-xs-4 h4 {
+          font-size: 14px;
+        }
+        .sub-nav .col-xs-6 {
+          letter-spacing: 2px;
+        }
+        .top-img-header {
+          font-size: 36px;
+          margin-top: 15%;
+        }
+        .top-img-text {
+          font-size: 18px;
+          margin-top: 23%;
+        }
+      }
+      @media only screen and (max-width: 600px) {
+        .col-xs-3 h4 {
+          font-size: 12px;
+        }
+        .col-xs-3 .glyphicon {
+          height: 100px;
+          width: 100px;
+          border: 8px solid #05538a;
+        }
+        .col-xs-4 h4 {
+          font-size: 12px;
+        }
+        .sub-nav .col-xs-4 {
+          letter-spacing: 2px;
+        }
+        .top-img-text {
+          letter-spacing: 6px !important;
+        }
+      }
+      @media only screen and (max-width: 535px) {
+        .single-line {
+          padding: 8.5px 0;
+        }
+        .sub-nav .col-xs-4 {
+          letter-spacing: 2px;
+          font-size: 12px;
+        }
+        .top-img-header {
+          font-size: 25px;
+          margin-top: 17%;
+        }
+        .top-img-text {
+          font-size: 15px;
+          margin-top: 24%;
+          letter-spacing: 5px;
+        }
+      }
+      @media only screen and (max-width: 400px) {
+        .center h4 {
+          font-size: 12px;
+        }
+        .center p {
+          font-size: 12px;
+        }
+        .col-xs-3 h4 {
+          font-size: 8px;
+          letter-spacing: 1px;
+        }
+        .col-xs-4 h4 {
+          font-size: 12px;
+          letter-spacing: 1px;
+        }
+        .col-xs-12 h4 {
+          font-size: 14px;
+        }
+        .col-xs-12 li {
+          font-size: 10px;
+        }
+        .col-xs-12 p {
+          font-size: 12px;
+        }
+        .dissappearing-br {
+          display: block;
+        }
+        .row {
+          margin-left: 0;
+          margin-right: 0;
+        }
+        .sub-nav .col-xs-6 {
+          font-size: 8px;
+        }
+        .top-img-header {
+          font-size: 21px;
+          margin-top: 18%;
+          letter-spacing: 8px;
+        }
+        .top-img-text {
+          font-size: 12px;
+          margin-top: 25%;
+          letter-spacing: 4px;
+        }
+      }
+      @media only screen and (max-width: 399px) {
+        .col-xs-12 h4 {
+          font-size: 11px;
+          padding-top: 5px;
+        }
+        .sub-nav .col-xs-4 {
+          letter-spacing: 1px;
+        }
+        .top-img-header {
+          font-size: 18px;
+          margin-top: 20%;
+          letter-spacing: 5px;
+        }
+        #nestedAccordion h2 {
+          border: 2.5px solid #888b8d;
+          font-size: 16px;
+          padding: 8px 0 6px 10px;
+        }
+        #nestedAccordion h3 {
+          font-size: 12px;
+          letter-spacing: 1px;
+        }
+      }
+      /**** END Main Page Stylings ****/
+
+      /**** BEGIN Footer Stylings ****/
+      ul li a i {
+        background: #888888;
+        color: #ffffff;
+        width: 30px;
+        height: 30px;
+        border-radius: 20px;
+        font-size: 19px !important;
+        text-align: center;
+        margin-right: 10px;
+        padding-top: 23%;
+        padding-right: 1px;
+        transition: background-color .5s;
+      }
+      ul li a i:hover {
+        background-color: #05538a;
+      }
+      .footer {
+        background-color: #ffffff;
+        color: #aaaaaa;
+        border: 1px solid #cccccc;
+        padding-top: 7px;
+        padding-bottom: 1%;
+      }
+      .socialmedia-icons {
+        overflow: auto;
+        padding-left: 0;
+      }
+      .socialmedia-icons li {
+        list-style-type: none;
+        float: left;
+      }
+      @media only screen and (max-width: 992px) {
+        ul li a i {
+          width: 30px;
+          height: 30px;
+          border-radius: 25px;
+          font-size: 19px !important;
+          margin-right: 7px;
+          margin-top: 7px;
+        }
+        .footer {
+          padding-bottom: 7px;
+        }
+      }
+      @media only screen and (max-width: 713px) {
+        ul li a i {
+          margin-top: 7px;
+          padding-left: 1px;
+        }
+        .footer {
+          font-size: 11px;
+        }
+      }
+      @media only screen and (max-width: 417px) {
+        ul li a i {
+          margin-top: 4px;
+          margin-right: 4px;
+          font-size: 18px !important;
+          padding-top: 9px;
+          padding-left: 3px;
+        }
+        .footer {
+          font-size: 9px;
+          padding: 0 5px;
+        }
+        .footer .col-xs-3 {
+          padding-right: 0;
+          padding-left: 0;
+        }
+      }
+      /**** END Footer Stylings ****/
+		</style>
+
+    </head>
+    <body>
+      <!-- BEGIN Navbar -->
+      <nav class="navbar navbar-default navbar-fixed-top">
+  		  <div class="container">
+  		    <div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Navigation à bascule</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="http://tranontinternational.ca/"><img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/Tranont_Logo-horiz.jpg"/></a></div>
+          <div class="navbar-collapse collapse">
+    		    <ul class="nav navbar-nav">
+    		      <li class="dropdown"><a class="dropdown-toggle disabled" data-toggle="dropdown" href="http://fr.tranontinternational.ca/company.html">SOCIÉTÉ</a>
+                <ul class="dropdown-menu">
+    		      		<li><a href="http://fr.tranontinternational.ca/company.html#associates">ASSOCIÉS</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/company.html#foundation">FONDATION</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/company.html#investor-relations">RELATIONS AVEC LES INVESTISSEURS</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/company.html#media-kit">TROUSSE MÉDIA </a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/executives.html">DIRIGEANTS</a></li>
+      		      	<li><a href="http://fr.tranontinternational.ca/aboutus.html">À PROPOS DE NOUS</a></li>
+      		      	<li><a href="http://fr.tranontinternational.ca/company.html#supportfaq">ASSISTANCE</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/company.html#supportfaq">FOIRE AUX QUESTIONS</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/company.html#blog">BLOGUE</a></li>
+    		      	</ul>
+    		      </li>
+    		      <li class="dropdown"><a class="dropdown-toggle disabled" data-toggle="dropdown" href="http://fr.tranontinternational.ca/products.html">PRODUITS</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-header">CORE</li>
+    		      		<li><a href="http://fr.tranontinternational.ca/oneview.html">ONEVIEW</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/defend.html">DEFEND</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/taxbot.html">TAXBOT</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/legal.html">LÉGAL</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/creditservices.html">SERVICES DE CRÉDIT</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/taxservices.html">SERVICES FISCAUX</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">OUTILS COMMERCIAUX</li>
+    		      		<li><a href="http://fr.tranontinternational.ca/marketingplatform.html">PLATEFORME COMMERCIALE</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/associatecenter.html">CENTRE DES ASSOCIÉS</a></li>
+                  <li class="divider"></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/retailservices.html">SERVICES DE DÉTAIL</a></li>
+    		      	</ul>
+    		      </li>
+    		      <li class="dropdown"><a class="dropdown-toggle disabled" data-toggle="dropdown" href="http://fr.tranontinternational.ca/compensation.html">RÉMUNÉRATION</a>
+                <ul class="dropdown-menu">
+    		      		<li><a href="http://fr.tranontinternational.ca/compensation.html#comp-plan">RÉGIME DE RÉMUNÉRATION</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/compensation.html#why-tranont">POURQUOI CHOISIR TRANONT</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/compensation.html#current-promos">PROMOTIONS ACTUELLES</a></li>
+                  <li><a href="http://fr.tranontinternational.ca/retailservices.html">SERVICES DE DÉTAIL</a></li>
+    		      	</ul>
+    		      </li>
+    		      <li class="dropdown"><a class="dropdown-toggle disabled" data-toggle="dropdown" href="http://fr.tranontinternational.ca/events.html">ÉVÉNEMENTS</a>
+                <ul class="dropdown-menu">
+    		      		<li><a href="http://fr.tranontinternational.ca/events.html#national">ÉVÉNEMENTS NATIONAUX</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/events.html#international">ÉVÉNEMENTS INTERNATIONAUX</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/events.html#regional">ÉVÉNEMENTS RÉGIONAUX</a></li>
+    		      		<li><a href="http://fr.tranontinternational.ca/events.html#calendar">CALENDRIER DES ÉVÉNEMENTS</a></li>
+    		      	</ul>
+    		      </li>
+              <li class="dropdown"><a class="dropdown-toggle disabled" data-toggle="dropdown"><img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/canadian-flag-small.png" alt="Drapeau canadien"/></a>
+                <ul class="dropdown-menu">
+                  <li><a href="http://tranontinternational.com/defend.html"><img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/canadian-flag-small.png" alt="Drapeau canadien"/> CA (ANGLAIS)</a></li>
+                  <li><a href="http://tranont.com/defend.html"><img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/united-states-flag.png" alt="Drapeau américain"/> É.-U.</a></li>
+                </ul>
+              </li>
+    		      <li><a class="join-text" href="https://member.tranont.com/signup"><span id="join-tranont"><strong>REJOINDRE TRANONT</strong></span><span id="join"><strong>REJOINDRE</strong></span></a></li>
+    		      <li><a href="http://members.tranont.com/login"><span id="associate-login"><strong>CONNEXION</strong></span></a></li>
+    		    </ul>
+            <div class="dropdown pull-right">
+              <form class="navbar-form" role="search">
+                <div class="input-group"><input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term"><div class="input-group-btn" id="srch-btn"><button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button></div>
+                </div>
+              </form>
+            </div>
+          </div>
+  		  </div>
+  		</nav>
+      <!-- END Navbar -->
+
+      <!-- BEGIN Main Content -->
+      <div class="container main">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2 class="top-img-header">Defend</h2>
+            <h4 class="top-img-text">Protection de l'ere numerique</h4><img class="top-img" src="https://s3-us-west-2.amazonaws.com/cont.training/Images/201612_Defend_topmod_01.jpg" alt="Grand coffre type coffre de banque"/></div>
+        </div>
+        <div class="row sub-nav"><a href="#products"><div class="col-xs-4">
+            <p class="single-line">Produits</p>
+          </div></a> <a href="#protection"><div class="col-xs-4">
+            <p class="single-line">Protection</p>
+          </div></a> <a href="#customer-reviews"><div class="col-xs-4">
+            <p>Commentaires<br/>des clients</p>
+          </div></a></div>
+        <div class="row">
+          <div class="col-xs-12"><br/><h3 class="center">Protégez votre avenir financier.</h3>
+            <h3 class="center">Protégez votre identité, votre vie privée et votre argent.</h3><br/></div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="fluid-width-video-wrapper"><iframe src="https://www.youtube.com/embed/h_mTJjqTODg?rel=0&amp;showinfo=0&amp;modestbranding=1" frameborder="0" allowfullscreen="" id="fitvid527034"></iframe></div><br/><p class="margin-sides"><em>L&#39;ère numérique a ouvert un réservoir de nouvelles menaces pour votre vie privée, la sécurité et la sécurité financière. Se défendre et défendre sa famille contre le vol d&#39;identité et le cyber-crime est devenu un élément primordial d&#39;un avenir financier sûr et réussi.</em></p>
+          </div>
+        </div>
+        <div class="row" id="products">
+          <div class="col-xs-12">
+            <hr class="hr-top"/>
+              <h3 class="page-headers">Produits</h3>
+            <hr class="hr-bottom"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <p class="leftright-margins">La gamme de services de protection Tranont Defend vous offre une protection maximale à des tarifs réduits exclusifs. Choisissez les forfaits qui vous conviennent.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-2"><img src="https://s3-us-west-2.amazonaws.com/tranontmedia/defend/ident.png" alt="Dessin d&#39;un homme avec une loupe devant lui"/></div>
+          <div class="col-xs-10">
+            <h3>Protection contre le vol d&#39;identité</h3>
+            <p>Des services complets de surveillance et de récupération de vol d&#39;identité pour une personne et pour la famille pour tous les types de fraude d&#39;identité - ainsi que d&#39;autres avantages de protection qui ne sont pas disponibles dans d&#39;autres services.</p>
+            <div class="col-xs-2"><button type="button" id="btn-default" class="btn btn-default button" data-toggle="collapse" data-target="#id-theft-protection">En savoir plus <span class="glyphicon glyphicon-triangle-right"></span></button></div>
+            <div class="col-xs-10"><a href="https://member.tranont.com/signup/basepages/precheck.asp?selLanguage=English&Country=UNITED%20STATES" id="btn-default" class="btn btn-default" role="button">Inscription</a></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div id="id-theft-protection" class="collapse">
+              <p><em>Ne laissez pas un vol d&#39;identité ruiner votre vie! Protégez votre identité, votre crédit et votre argent. Et protégez ceux que vous aimez le plus - votre famille.</em></p>
+              <p>Tranont s&#39;est associée à INVISUS pour vous fournir la meilleure protection contre le vol d&#39;identité disponible aujourd&#39;hui - iDefend. iDefend vous offre tous les éléments essentiels de la protection dont vous avez besoin pour vous protéger, vous et votre famille, contre les dernières menaces des voleurs d&#39;identité et des cybercriminels.</p>
+              <p>Vous obtenez une protection contre tous les types de vol d&#39;identité, y compris le vol de numéro de sécurité sociale, la fraude bancaire, la fraude fiscale, le vol de prestations médicales, la fraude relative aux casiers judiciaires, et bien plus encore.</p>
+              <p>C&#39;est simple - aucun autre service ne vous donne ce niveau de protection! Obtenez la protection que vous méritez et FAITES DE GROSSES ÉCONOMIES!</p>
+              <hr class="collapsibale-hr">
+              <p>Les avantages de votre protection iDefend® comprennent :</p>
+              <ul>
+                <li>Compte personnel en ligne, tableau de bord</li>
+                <li>Surveillance complète contre le vol d&#39;identité</li>
+                <li>Alertes instantanées et rapport mensuel</li>
+                <li>Outils de protection du crédit et de la vie privée</li>
+                <li>Protection en cas de perte du portefeuille et coffre-fort en ligne</li>
+                <li>Service complet de rétablissement de l&#39;identité</li>
+                <li>Assistance téléphonique pour les membres en cas de vol de pièces d&#39;identité</li>
+              </ul>
+              <p>EN PLUS - ces avantages supplémentaires de protection!</p>
+              <div class="row">
+                <div class="col-xs-3"><img src="https://s3-us-west-2.amazonaws.com/tranontmedia/defend/image3.png" alt="Logo SecurePC Makeover"/></div>
+                <div class="col-xs-9">
+                  <p>Vérification complète de la sécurité informatique effectuée deux fois par année au moyen d&#39;une connexion à distance par un technicien certifié basé aux États-Unis,  scan antivirus/suppression des virus, vérification de l&#39;antivirus et des paramètres de sécurité, et plus encore. (Windows/Mac)</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-3"><img src="https://s3-us-west-2.amazonaws.com/tranontmedia/defend/INV_MySocialGuardian_Logo_Wide.png" alt="Logo mySocialGuardian"/></div>
+                <div class="col-xs-9">
+                  <p>Surveillance 24h/24 et 7j/7 des comptes Facebook, Instagram, Twitter et LinkedIn contre les cas de diffamation, harcèlement, intimidation, grossièreté, cyber-traque, divulgation des renseignements personnels et autres risques pour la vie privée.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-3"><img src="https://s3-us-west-2.amazonaws.com/tranontmedia/defend/image5.png" alt="Logo Cyberhood Watch"/></div>
+                <div class="col-xs-9">
+                  <p>La cybersécurité en temps réel, la fraude et les alertes frauduleuses, ainsi que le centre de ressources d&#39;informations en ligne avec accès à des cartes de localisation des crimes et des délinquants sexuels.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p class="leftright-padding">Choisissez le plan iDefend le mieux adapté à votre situation :</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-6 center">
+                  <h3>Les indispensables de iDefend®</h3>
+                  <p><small>Tous les indispensables de la protection contre le vol d&#39;identité.</small></p>
+                  <h5>Forfait Solo</h5>
+                  <h4>9,95 $/mois</h4>
+                  <p><small>(Prix rég. 14,95 $)</small></p>
+                  <h5>Forfait Famille*</h5>
+                  <h4>19,95 $/mois</h4>
+                  <p><small>(Prix rég. 14,95 $)</small></p>
+                </div>
+                <div class="col-xs-6 center">
+                  <h3>iDefend® Elite</h3>
+                  <p><small>Tous les indispensables de la protection contre le vol d&#39;identité - avec la surveillance du crédit en plus.</small></p>
+                  <h5>Forfait Solo</h5>
+                  <h4>16,95 $/mois</h4>
+                  <p><small>(Prix rég. 24,95 $)</small></p>
+                  <h5>Forfait Famille*</h5>
+                  <h4>34,95 $/mois</h4>
+                  <p><small>(Prix rég. 39,95 $)</small></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <p class="leftright-padding"><small><em>* Les forfaits Famille comprennent une couverture complète pour vous, votre conjoint(e) et tous les enfants du foyer de moins de 25 ans, y compris les étudiants non mariés dont l&#39;adresse principale est l&#39;adresse de votre domicile. Les forfaits Famille incluent également MySocialGuardian pour tous les membres de la famille, et 2x par an des vérifications de sécurité informatique pour un maximum de 3 ordinateurs à la maison. Le forfait Famille Elite inclut la surveillance du crédit pour 2 adultes.</em></small></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12"><a href="https://member.tranont.com/signup/basepages/precheck.asp?selLanguage=English&Country=UNITED%20STATES" role="button" id="btn-default" class="btn btn-default center-element signup-button">Soyez protégé</a></div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <h3 class="leftright-padding"><em>Essayez-le sans risque!</em></h3>
+                  <p class="leftright-padding"><em>Sans délai minimal de contrat. Si vous n&#39;êtes pas satisfait de votre service, vous pouvez annuler à tout moment sans aucune autre obligation.</em></p>
+                </div>
+              </div>
+              <hr>
+              <div class="row bottom-row">
+                <div class="col-xs-12">
+                  <h3 class="leftright-padding">Foire aux questions</h3>
+                  <p class="leftright-padding"><strong>Quel type de vol d&#39;identité est couvert?</strong></p>
+                  <p class="leftright-padding">Chaque plan iDefend inclut les fonctionnalités de surveillance et de protection contre le vol d&#39;identité nécessaires pour protéger votre famille contre pratiquement TOUTES les formes de vol d&#39;identité, y compris :</p>
+                  <ul>
+                    <li>Vol d&#39;identité sous forme de fraude du nom véritable (NSS, DDN)</li>
+                    <li>Fraude liée au crédit</li>
+                    <li>Fraude aux prestations sociales</li>
+                    <li>Vol d&#39;identité fiscale</li>
+                    <li>Vol d&#39;identité médicale</li>
+                    <li>Fraude relative aux casiers judiciaires</li>
+                    <li>Fraude liée aux services publics, aux prêts sur salaire</li>
+                    <li>Mais encore...</li>
+                  </ul>
+                  <h5 class="leftright-padding"><strong>iDefend est un programme INVISUS.</strong></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-xs-2"><img src="https://s3-us-west-2.amazonaws.com/tranontmedia/defend/help.png" alt="Dessin d&#39;une fenêtre d&#39;ordinateur avec une clé et une flèche pointant vers la fenêtre"/></div>
+          <div class="col-xs-10">
+            <h3>Protection de l&#39;ordinateur/assistance technique</h3>
+            <p>Services illimités de sécurité et d&#39;assistance technique pour votre ordinateur PC/Mac et vos appareils mobiles. Économisez des centaines de dollars sur les réparations, les mises au point, les vérifications de sécurité et l&#39;entretien.</p>
+            <div class="col-xs-2"><button type="button" id="btn-default" class="btn btn-default button" data-toggle="collapse" data-target="#computer-protection">En savoir plus <span class="glyphicon glyphicon-triangle-right"></span></button></div>
+            <div class="col-xs-10"><a href="https://member.tranont.com/signup/basepages/precheck.asp?selLanguage=English&Country=UNITED%20STATES" id="btn-default" class="btn btn-default" role="button">Inscription</a></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div id="computer-protection" class="collapse">
+              <p><em>Avez-vous déjà souhaité avoir accès à une équipe de techniciens informatiques certifiés que vous pourriez contacter chaque fois que vous avez une question ou un problème avec votre ordinateur - sans avoir à payer chaque fois que vous voulez de l&#39;aide? Que diriez-vous de disposer d&#39;experts qui vous aident à éloigner les pirates de votre ordinateur, et à effectuer une vérification de sécurité complète aussi souvent que nécessaire?</em></p>
+              <p>Ne cherchez plus. Tranont s&#39;est associée à INVISUS pour vous offrir les meilleurs services de sécurité et d&#39;assistance technique de l&#39;industrie à des tarifs très réduits avec le forfait de service iCare. Ne vous tracassez plus la tête et ne perdez plus votre temps avec vos problèmes informatiques ou vos ennuis de sécurité!</p>
+              <ul>
+                <li>Débarassez-vous des frustrations technologiques!</li>
+                <li>Tenez les pirates informatiques et les prédateurs à l&#39;écart!</li>
+                <li>Gagnez du temps et de l&#39;argent!</li>
+                <li>Gardez tout comme si c&#39;était neuf!</li>
+              </ul>
+              <hr class="collapsibale-hr"><img src="https://s3-us-west-2.amazonaws.com/tranontmedia/defend/icare_logo.gif" alt="Logo iCare"/><div class="row">
+                <div class="col-xs-12 leftright-padding">
+                  <h3>Comment cela fonctionne :</h3>
+                  <p>Obtenir l&#39;aide immédiate d&#39;un expert avec vos ordinateurs est facile! Il suffit d&#39;appeler la ligne d&#39;assistance technique d&#39;INVISUS chaque fois que vous avez besoin d&#39;aide. Votre service est effectué personnellement par un technicien certifié INVISUS iCare  basé aux États-Unis par téléphone et par une connexion à distance par Internet à votre ordinateur. Vous pouvez vous asseoir et regarder ou vous pouvez quitter les lieux alors que nous travaillons sur votre ordinateur. Vous obtiendrez un rapport complet de ce que nous avons trouvé et le travail que nous avons fait après la fermeture d&#39;un ticket de support.</p>
+                  <h3>Appareils mobiles :</h3>
+                  <p>Pour vos téléphones intelligents et tablettes, nous vous fournirons des conseils, des suggestions et des outils de sécurité pour verrouiller vos téléphones intelligents et vos tablettes afin de garder les personnes mal intentionnées hors de vos appareils. (iOS/Android)</p>
+                  <h4 class="center">Dites adieu aux tracas technologiques, au temps perdu et aux factures de réparation coûteuses!</h4>
+                  <h4 class="center">Dites bonjour à une vie numérique simple et sécurisée!</h4>
+                  <hr>
+                  <p>Choisissez le forfait de services illimités iCare qui vous convient :</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-6 center">
+                  <h3>iCare Personnel</h3>
+                  <p><small>Pour un ordinateur personnel et vos appareils mobiles personnels.</small></p>
+                  <h4>19,95 $/mois</h4>
+                  <p><small>(Prix rég. 29,95 $)</small></p>
+                </div>
+                <div class="col-xs-6 center">
+                  <h3>iCare Home</h3>
+                  <p><small>Pour TOUS vos ordinateurs personnels à la maison et vos appareils mobiles.</small></p>
+                  <h4>29,95 $/mois</h4>
+                  <p><small>(Prix rég. 39,95 $)</small></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12"><a href="https://member.tranont.com/signup/basepages/precheck.asp?selLanguage=English&Country=UNITED%20STATES" id="btn-default" role="button" class="btn btn-default center-element signup-button">Soyez protégé</a></div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12 leftright-padding">
+                  <h3>Commentaires des clients</h3>
+                </div>
+              </div>
+              <div class="row bottom-row leftright-padding">
+                <div id="nestedAccordion">
+            			<h2>Matthew F. - Norfolk, NY</h2>
+          			    <div class="accordion_container">
+        			        <h5><strong>J&#39;étais complètement stressé quand j&#39;ai pensé que les données de mon PC avaient été effacées.</strong><br> Mon technicien était SUPER sympa et serviable. Il a géré chacun des obstacles de manière EXTRÊMEMENT professionnelle et amicale. Si on me demande un jour de recommander une société de sécurité, ce SERA INVISUS. Ça, c&#39;est sûr!</h5>
+          			    </div>
+            			<h2>Patricia E. - Phelan, CA</h2>
+          			    <div class="accordion_container">
+        			        <h5><strong>Je n&#39;aurais aucune autre protection.</strong><br> J&#39;ai toujours une expérience fantastique avec mes techniciens INVISUS. Je l&#39;ai recommandée à plusieurs personnes. En fait, j&#39;ai le service pour mes deux ordinateurs qui se trouvent 160 kilomètres l&#39;un de l&#39;autre.</h5>
+          			    </div>
+            			<h2>Sylvia J. - Dayton, OH</h2>
+          			    <div class="accordion_container">
+                      <h5><strong>Je pensais avoir tout perdu.</strong><br> Mon ordinateur a été infecté par un virus caché que j&#39;ignorais - jusqu&#39;à ce qu&#39;il supprime les icônes de mon bureau et laisse un écran noir et vide. Cela a raccourci ma vie. Mais vous avez fait un excellent travail en récupérant tous mes fichiers. Je suis si contente de savoir que vous êtes là!</h5>
+          			    </div>
+            			<h2>Niki F. - Livingston, AL</h2>
+          			    <div class="accordion_container">
+                      <h5><strong>Il a éloigné mes pires cauchemars!</strong><br> Après avoir été au téléphone avec un technicien d&#39;une autre entreprise, j&#39;apprécie beaucoup les techniciens chez INVISUS qui prennent le temps de savoir de quel problème il s&#39;agit, de diagnostiquer rapidement la situation et de prendre le relais pour tout réparer. Mon technicien INVISUS était génial! Il m&#39;a vraiment rassuré quand il m&#39;a rappelé pour me faire savoir qu&#39;il avait réussi à tout récupérer et que tout était réglé!</h5>
+          			    </div>
+            			<h2>Marcus T. - Ponte Vedra, FL</h2>
+          			    <div class="accordion_container">
+                      <h5><strong>C&#39;est pourquoi nous restons avec iCare. Juste pour info...</strong><br> Vous avez fait un travail fantastique en débarassant l&#39;ordinateur de ma femme du cheval de Troie, etc. lorsque nous vous avons contactés. Comme elle travaille dans l&#39;immobilier, son ordinateur portable est indispensable pour son activité commerciale. Nous aimons le fait de pouvoir appeler chaque fois que nous avons besoin d&#39;aide.</h5>
+          			    </div>
+            			<h2>Doug R. - Yuba City, CA</h2>
+          			    <div class="accordion_container">
+                      <h5><strong>Faire confiance aux grandes marques d&#39;antivirus a conduit à la catastrophe.</strong><br> Je suis stupéfait lorsque j&#39;entends d&#39;autres personnes parler de leurs problèmes informatiques qui ne s&#39;arrêtent jamais. Ils ne peuvent pas imaginer qu&#39;une société de services puisse faire un si bon travail. Je pensais comme eux jusqu&#39;à ce que j&#39;essaie votre service. Maintenant, je ne pense même pas aux virus ou aux fichiers perdus. Je sais que je suis en sécurité.</h5>
+          			    </div>
+          			</div><!-- #nestedAccordion -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-xs-2"><img src="https://s3-us-west-2.amazonaws.com/tranontmedia/defend/social-1.png" alt="Dessin de bulles de dialogue sortant d&#39;un mégaphone "/></div>
+          <div class="col-xs-10">
+            <h3>Surveillance des médias sociaux</h3>
+            <p>Surveillance 24h/24 et 7j/7 des comptes Facebook, Instagram, Twitter et LinkedIn contre les cas de diffamation, intimidation, harcèlement, risques pour la vie privée et plus encore.</p>
+            <div class="col-xs-2"><button type="button" id="btn-default" class="btn btn-default button" data-toggle="collapse" data-target="#social-media-monitoring">En savoir plus <span class="glyphicon glyphicon-triangle-right"></span></button></div>
+            <div class="col-xs-10"><a href="https://member.tranont.com/signup/basepages/precheck.asp?selLanguage=English&Country=UNITED%20STATES" id="btn-default" class="btn btn-default" role="button">Inscription</a></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div id="social-media-monitoring" class="collapse">
+              <p><em>Le monde est vraiment en train de regarder. Avec des sites comme Facebook et Instagram, nous pouvons exposer trop d&#39;informations ou les mauvaises informations si nous ne sommes pas prudents. Les sites de médias sociaux sont également devenus le terrain de jeu pour les prédateurs et les voleurs. Les parents doivent maintenant être vigilants avec les activités en ligne de leur enfant pour les protéger contre l&#39;intimidation cybernétique et d&#39;autres menaces, et détecter les références aux drogues/à l&#39;alcool, à la violence, ainsi que les prédateurs à la recherche de leur prochaine victime.</em></p>
+              <p>Tranont s&#39;est associée à INVISUS pour vous offrir le programme MySocialGuardian qui vise à vous aider à détecter les activités dangereuses ou suspectes sur Facebook, Twitter, Instagram et LinkedIn qui représentent une menace pour vous ou votre famille.</p>
+              <hr class="collapsibale-hr"><img src="https://s3-us-west-2.amazonaws.com/tranontmedia/defend/INV_MySocialGuardian_Logo_Wide.png" alt="Logo mySocialGuardian"/><p>MySocialGuardian offre une surveillance 24h/24 et 7j/7 et des alertes relatives aux comptes Facebook, Twitter, Instagram et LinkedIn pour vous et les membres de la famille pour lesquels le service a été configuré. Vous pourrez effectuer une surveillance et vous protéger contre :</p>
+              <ul>
+                <li>Diffamation</li>
+                <li>Harcèlement et intimidation</li>
+                <li>Grossièreté</li>
+                <li>Cyber-traque</li>
+                <li>Menaces de violence</li>
+                <li>Références aux drogues et à l&#39;alcool</li>
+                <li>Divulgation des renseignements personnels</li>
+                <li>Mais encore...</li>
+              </ul>
+              <p class="leftright-padding">Choisissez une couverture MySocialGuardian personnelle ou pour la famille :</p>
+              <div class="row">
+                <div class="col-xs-6 center">
+                  <h3>Personnelle</h3>
+                  <p><small>Surveillance pour une personne.</small></p>
+                  <h4>4,95 $/mois</h4>
+                  <p><small>(Prix rég. 6,95 $)</small></p>
+                </div>
+                <div class="col-xs-6 center">
+                  <h3>Famille</h3>
+                  <p><small>Surveillance pour tous les membres de la famille.</small></p>
+                  <h4>7,95 $/mois</h4>
+                  <p><small>(Prix rég. 9,95 $)</small></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12"><a href="https://member.tranont.com/signup/basepages/precheck.asp?selLanguage=English&Country=UNITED%20STATES" id="btn-default" role="button" class="btn btn-default center-element signup-button">Soyez protégé</a></div>
+              </div>
+              <div class="row bottom-row">
+                <div class="col-xs-12 leftright-padding">
+                  <h3>Essayez-le sans risque!</h3>
+                  <p>Sans délai minimal de contrat. Si vous n&#39;êtes pas satisfait de votre service, vous pouvez annuler à tout moment sans aucune autre obligation.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="row" id="protection">
+          <div class="col-xs-12">
+            <hr class="hr-top"/>
+              <h3 class="page-headers">Protection</h3>
+            <hr class="hr-bottom"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <h3 class="center">Pourquoi vous le procurer et rester protégé</h3>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-xs-9">
+            <h4>Le vol d&#39;identité peut détruire votre plan financier.</h4>
+            <p>Vous travaillez dur à l&#39;atteinte d&#39;une sécurité financière. Les pirates informatiques et les voleurs d&#39;identité travaillent dur également, mais pour voler vos renseignements personnels et entrer dans vos comptes bancaires et votre crédit personnel. Ils vont se remplir les poches avec votre argent et vont vous laisser payer les pots cassés. Ne courrez pas le risque d&#39;être laissé sans le sou! Protégez-vous et vos proches contre le vol d&#39;identité; la cybercriminalité est dorénavant un élément indispensable à la réussite d&#39;un plan financier.</p>
+          </div>
+          <div class="col-xs-3"><img src="https://s3-us-west-2.amazonaws.com/tranontmedia/defend/idtheft.jpeg" alt="Image d&#39;un bras sortant d&#39;un écran d&#39;ordinateur s&#39;emparant du portefeuille dans la poche arrière d&#39;une personne  "/></div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-xs-3 top-padding"><img src="https://s3-us-west-2.amazonaws.com/tranontmedia/defend/Corporate_Logos_Hacked.png" alt="5 logos d&#39;entreprise : The Home Depot®, Target®, BlueCross®, ebay™, et citibank"/></div>
+          <div class="col-xs-9">
+            <h4>Divulgation de vos renseignements personnels!</h4>
+            <p>Le vol des renseignements personnels est monnaie courante pour les voleurs. Des cyber-attaques se produisent quotidiennement dans les entreprises, les banques, les organismes de soins de santé, les cabinets d&#39;avocats, les écoles et les organismes gouvernementaux. Des millions de personnes chaque mois assistent à la divulgation de leurs renseignements personnels à travers des violations de données accidentelles ou criminelles. Vous avez peut-être déjà reçu une ou plusieurs de ces lettres de notification. Avant que vos informations ne soient exposées dans une autre violation des données, assurez-vous d&#39;avoir une équipe d&#39;experts en sécurité et en vol d&#39;identité à disposition.</p>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-xs-9">
+            <h4>Cible : votre ordinateur et votre téléphone intelligent.</h4>
+            <p>Avez-vous accès à votre compte bancaire ou payez-vous des factures en ligne? Avez-vous déjà acheter quelque chose ou planifier un voyage en ligne? De nos jours, nous utilisons l&#39;Internet pour presque tout, tout comme les personnes malveillantes. Les ordinateurs et les appareils mobiles sont le terrain de jeu des pirates informatiques et des prédateurs sur Internet. Un logiciel antivirus n&#39;offre pas assez de protection contre les prédateurs en ligne qui veulent s&#39;emparer de vos ordinateurs et périphériques et vous arnaquer. Assurez-vous d&#39;effectuer régulièrement des vérifications de sécurité auprès d&#39;experts de confiance afin que vous puissiez rester en sécurité.</p>
+          </div>
+          <div class="col-xs-3 top-padding-more"><img src="https://s3-us-west-2.amazonaws.com/tranontmedia/defend/targetphones.png" alt="Image d&#39;un ordinateur de bureau, ordinateur portable, tablette et téléphone intelligent mis côte à côte"/></div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-xs-3"><img src="https://s3-us-west-2.amazonaws.com/tranontmedia/defend/Laptop-Virus-Alert.jpeg" alt="Image d&#39;un exemple d&#39;alerte de virus sur un écran d&#39;ordinateur"/></div>
+          <div class="col-xs-9">
+            <h4>Tout le monde a besoin d&#39;un expert technique.</h4>
+            <p>L&#39;évolution que connaît l&#39;univers des ordinateurs, des téléphones intelligents et de la technologie se fait à une vitesse folle. Préserver le bon état de fonctionnement des appareils sans risque de sécurité semble être un défi permanent. Les virus, les logiciels malveillants et les problèmes informatiques quotidiens sont à l&#39;origine de grandes frustrations et peuvent vous coûter cher en frais de réparation. À l&#39;ère numérique d&#39;aujourd&#39;hui, il est logique d&#39;avoir un accès à la demande aux experts techniques sur lesquels vous pouvez compter pour obtenir des conseils, un dépannage et des réparations.</p>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-xs-9">
+            <h4>Les prédateurs et intimidateurs se cachant en ligne.</h4>
+            <p>Il est important de faire attention à ce que vous publiez en ligne et à ce que vous partagez sur vous et votre famille. En tant que parents, vous devez agir activement à protéger vos enfants et à effectuer un suivi de leurs activités en ligne. Des cyber-intimidateurs aux prédateurs sexuels, les mauvaises personnes utilisent Internet pour en savoir plus sur les autres, les traquer et les victimiser. Pour vous personnellement, et pour vos proches, assurez-vous de rester vigilant et de surveiller les signes de menaces à votre vie privée et à la sécurité.</p>
+          </div>
+          <div class="col-xs-3"><img src="https://s3-us-west-2.amazonaws.com/tranontmedia/defend/Cyberbully-Online-Predator.jpeg" alt="Image d&#39;une femme assise regardant un écran d&#39;ordinateur portable d&#39;un air apeuré"/></div>
+        </div>
+        <div class="row" id="customer-reviews">
+          <div class="col-xs-12">
+            <hr class="hr-top"/>
+              <h3 class="page-headers">Commentaires des clients</h3>
+            <hr class="hr-bottom"/>
+          </div>
+        </div>
+        <div class="row bottom-row">
+          <div id="nestedAccordion">
+      			<h2>Tony L. - Pittsburg, PA</h2>
+      			    <div class="accordion_container">
+      			        <h5>« Lorsque nous avons appris que l&#39;identité de nos enfants pouvait être volée, il n&#39;était plus question d&#39;hésiter à obtenir la bonne protection pour l&#39;ENSEMBLE de notre famille. iDefend nous offre la protection la plus complète au meilleur prix. Nous sommes reconnaissants à iDefend! »</h5>
+      			    </div>
+      			<h2>A. W. - TX</h2>
+      			    <div class="accordion_container">
+      			        <h5>« La personne qui a travaillé sur la récupération était incroyable! Elle était compétente et très rapide dans le retour des appels et courriels, dans un délai de quelques heures environ. Je suis très reconnaissant d&#39;avoir cette personne pour me défendre parce que je n&#39;arrivais pas à déposer une réclamation auprès de ma banque directement. Merci pour le travail acharné dans ce dossier. »</h5>
+      			    </div>
+      			<h2>Lisa K. - Atlanta, GA</h2>
+      			    <div class="accordion_container">
+      			        <h5>« C&#39;est accablant de trouver que quelqu&#39;un a accès à tous vos renseignements personnels. L&#39;idée de devoir soi-même faire face à tous les dégâts qu&#39;ils ont faits et pourraient éventuellement faire suffit à pousser quelqu&#39;un à bout. Je voudrais personnellement vous remercier d&#39;avoir pris soin de tous mes problèmes et d&#39;avoir facilité la gestion de toute ma situation. »</h5>
+      			    </div>
+      			<h2>Jim W. - Wilson Consulting</h2>
+      			    <div class="accordion_container">
+      			        <h5>« Entièrement satisfait! Vous êtes merveilleux. Je viens d&#39;envoyer le rapport de synthèse à 8 de mes amis en vous recommandant. »</h5>
+      			    </div>
+      			<h2>Patricia H. - Malvern, PA</h2>
+      			    <div class="accordion_container">
+      			        <h5>« Il n&#39;y a plus de villaines surprises - et j&#39;ai économisé un paquet d&#39;argent en frais de réparation d&#39;ordinateur. »</h5>
+      			    </div>
+      			<h2>Rose S. - une GRANDE FAN</h2>
+      			    <div class="accordion_container">
+      			        <h5>« Vous m&#39;avez sauvée d&#39;une grosse escroquerie! J&#39;ai presque payé 149 $ pour un programme de sécurité pour réparer mon ordinateur, mais c&#39;était une magouille. J&#39;aurais perdu mon argent sans compter le vol de mon identité! Merci beaucoup »</h5>
+      			    </div>
+      			<h2>Sylvia J. - Dayton, OH</h2>
+      			    <div class="accordion_container">
+      			        <h5>« Je pensais avoir tout perdu. Mais vous avez fait un excellent travail en récupérant tous mes fichiers que je croyais perdus. Tellement contente! »</h5>
+      			    </div>
+      			</div><!-- #nestedAccordion -->
+        </div>
+      </div>
+      <!-- END Main Content -->
+
+      <!-- BEGIN Footer -->
+	    <div class="container">
+	    	<div class="row footer">
+          <div class="col-xs-2"><span class="footer-address"> 8871 S. Sandy Pkwy<br/> Suite 200<br/> Sandy, UT 84070 </span></div>
+          <div class="col-xs-3"><span class="footer-schedule"> <strong>Numéro sans frais:</strong> 800.973.3715<br/><strong>Télécopieur:</strong> 801.384.7143<br/><strong>Courriel:</strong> support@tranont.com </span></div>
+          <div class="col-xs-3"><span class="footer-schedule"> Lundi au vendredi: 8 h à 18 h<br/> Fermé le samedi et le dimanche<br/><em>heure des Rocheuses</em> </span></div>
+          <div class="col-xs-1">
+          </div>
+          <div class="col-xs-3"><strong>Restez connecté:</strong><br/><ul class="socialmedia-icons" id="socialmedia-icons-lg">
+              <li><a href="https://www.facebook.com/tranontofficial/"><i class="fa fa-lg fa-facebook"></i></a></li>
+              <li><a href="https://twitter.com/tranont"><i class="fa fa-lg fa-twitter"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/tranont"><i class="fa fa-lg fa-linkedin"></i></a></li>
+              <li><a href="https://www.pinterest.com/tranont/"><i class="fa fa-lg fa-pinterest"></i></a></li>
+            </ul>
+          </div>
+	    	</div>
+	    </div>
+      <!-- END Footer -->
+	    <script src="main.js"></script>
+    </body>
+</html>
