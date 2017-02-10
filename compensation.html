@@ -291,8 +291,8 @@
         letter-spacing: 2px;
       }
       .col-xs-12 p {
-        text-transform: uppercase;
-        letter-spacing: 2px;
+        font-size: 16px;
+        letter-spacing: 1px;
       }
       .col-xs-12 iframe {
         width: 100%;
@@ -308,9 +308,6 @@
       .comp-row {
         margin-top: 4%;
       }
-      .dissapearing-br {
-        display: none;
-      }
       .div-title {
         margin: 0;
         text-transform: uppercase;
@@ -320,13 +317,12 @@
       }
       .dropdown-text {
         margin: 0 2% 1% 2%;
-        text-transform: uppercase;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
       }
       .dropdown-text-bottom {
         margin: -2% 2% 3% 2%;
-        text-transform: uppercase;
-        letter-spacing: 2px;
+        letter-spacing: 1px;
+        font-size: 16px;
       }
       .filler-text {
         font-size: 12px;
@@ -352,6 +348,42 @@
       .glyphicon-calendar:hover {
         color: #ffffff;
       }
+      .glyphicon-headphones {
+        font-size: 48px;
+        font-weight: bold;
+        color: #05538a;
+        padding: 0;
+      }
+      .glyphicon-headphones:hover {
+        color: #ffffff;
+      }
+      .glyphicon-heart {
+        font-size: 48px;
+        font-weight: bold;
+        color: #05538a;
+        padding: 8px 2px 0 0;
+      }
+      .glyphicon-heart:hover {
+        color: #ffffff;
+      }
+      .glyphicon-ok {
+        font-size: 48px;
+        font-weight: bold;
+        color: #05538a;
+        padding: 1px 0 0 0;
+      }
+      .glyphicon-ok:hover {
+        color: #ffffff;
+      }
+      .glyphicon-list {
+        font-size: 48px;
+        font-weight: bold;
+        color: #05538a;
+        padding: 1px 0 0 3px;
+      }
+      .glyphicon-list:hover {
+        color: #ffffff;
+      }
       .glyphicon-plane {
         font-size: 48px;
         font-weight: bold;
@@ -359,6 +391,15 @@
         padding: 0 5px 0 1px;
       }
       .glyphicon-plane:hover {
+        color: #ffffff;
+      }
+      .glyphicon-road {
+        font-size: 48px;
+        font-weight: bold;
+        color: #05538a;
+        padding: 1px 0 0 0;
+      }
+      .glyphicon-road:hover {
         color: #ffffff;
       }
       .glyphicon-star {
@@ -407,7 +448,6 @@
       }
       .panel-body {
         border: none;
-        text-transform: uppercase;
         padding-top: 0;
         padding-bottom: 0;
       }
@@ -566,11 +606,6 @@
           font-size: 12px;
         }
       }
-      @media only screen and (max-width: 750px) {
-        .col-xs-3 h4 {
-          font-size: 16px;
-        }
-      }
       @media only screen and (max-width: 700px) {
         .col-xs-3 h4 {
           font-size: 16px;
@@ -615,23 +650,35 @@
           width: 100px;
           border: 8px solid #05538a;
         }
-        .glyphicon-usd {
+        .glyphicon-calendar {
           font-size: 38px;
         }
-        .glyphicon-calendar {
+        .glyphicon-headphones {
+          font-size: 38px;
+        }
+        .glyphicon-heart {
+          font-size: 38px;
+        }
+        .glyphicon-list {
+          font-size: 38px;
+        }
+        .glyphicon-ok {
           font-size: 38px;
         }
         .glyphicon-plane {
           font-size: 38px;
         }
+        .glyphicon-road {
+          font-size: 38px;
+        }
         .glyphicon-star {
+          font-size: 38px;
+        }
+        .glyphicon-usd {
           font-size: 38px;
         }
       }
       @media only screen and (max-width: 535px) {
-        .col-xs-3 h4 {
-          font-size: 11px;
-        }
         .sub-nav .col-xs-4 {
           letter-spacing: 1px;
           font-size: 10px;
@@ -644,16 +691,6 @@
           font-size: 15px;
           margin-top: 24%;
           letter-spacing: 5px;
-        }
-      }
-      @media only screen and (max-width: 500px) {
-        .col-xs-3 h4 {
-          letter-spacing: 1px;
-        }
-      }
-      @media only screen and (max-width: 450px) {
-        .dissapearing-br {
-          display: block;
         }
       }
       @media only screen and (max-width: 400px) {
@@ -690,7 +727,22 @@
         .glyphicon-calendar {
           font-size: 32px;
         }
+        .glyphicon-headphones {
+          font-size: 32px;
+        }
+        .glyphicon-heart {
+          font-size: 32px;
+        }
+        .glyphicon-list {
+          font-size: 32px;
+        }
+        .glyphicon-ok {
+          font-size: 32px;
+        }
         .glyphicon-plane {
+          font-size: 32px;
+        }
+        .glyphicon-road {
           font-size: 32px;
         }
         .glyphicon-star {
@@ -707,12 +759,7 @@
         .top-img-text {
           font-size: 12px;
           margin-top: 25%;
-          letter-spacing: 4px !important;
-        }
-      }
-      @media only screen and (max-width: 400px) {
-        .top-img-text {
-          margin-top: 26%;
+          letter-spacing: 4px;
         }
       }
       /**** END Main Page Stylings ****/
@@ -889,11 +936,11 @@
         <div class="row comp-row">
           <div class="col-xs-3 center"><button class="glyphicon glyphicon-usd residual-button" data-toggle="collapse" data-target="#residual"></button><h4 class="residual-title">Revenu résiduel</h4>
           </div>
-          <div class="col-xs-3 center"><button class="glyphicon glyphicon-usd team-button" data-toggle="collapse" data-target="#team"></button><h4 class="team-title">Prime <br class="dissapearing-br"/>mensuelle sur le volume d&#39;équipe</h4>
+          <div class="col-xs-3 center"><button class="glyphicon glyphicon-calendar team-button" data-toggle="collapse" data-target="#team"></button><h4 class="team-title">Prime <br class="dissapearing-br"/>mensuelle sur le volume d&#39;équipe</h4>
           </div>
-          <div class="col-xs-3 center"><button class="glyphicon glyphicon-usd car-button" data-toggle="collapse" data-target="#car"></button><h4 class="car-title">Prime auto</h4>
+          <div class="col-xs-3 center"><button class="glyphicon glyphicon-road car-button" data-toggle="collapse" data-target="#car"></button><h4 class="car-title">Prime auto</h4>
           </div>
-          <div class="col-xs-3 center"><button class="glyphicon glyphicon-usd pools-button" data-toggle="collapse" data-target="#pools"></button><h4 class="pools-title">Pools de bonus</h4>
+          <div class="col-xs-3 center"><button class="glyphicon glyphicon-ok pools-button" data-toggle="collapse" data-target="#pools"></button><h4 class="pools-title">Pools de bonus</h4>
           </div>
         </div>
         <div class="row">
@@ -982,13 +1029,13 @@
           </div>
         </div>
         <div class="row comp-row">
-          <div class="col-xs-3 center"><button class="glyphicon glyphicon-usd life-button" data-toggle="collapse" data-target="#life"></button><h4 class="life-title">Prime viagère</h4>
+          <div class="col-xs-3 center"><button class="glyphicon glyphicon-headphones life-button" data-toggle="collapse" data-target="#life"></button><h4 class="life-title">Prime viagère</h4>
           </div>
-          <div class="col-xs-3 center"><button class="glyphicon glyphicon-usd commissions-button" data-toggle="collapse" data-target="#commissions"></button><h4 class="commissions-title">Commissions de Tranont Life</h4>
+          <div class="col-xs-3 center"><button class="glyphicon glyphicon-heaart commissions-button" data-toggle="collapse" data-target="#commissions"></button><h4 class="commissions-title">Commissions de Tranont Life</h4>
           </div>
-          <div class="col-xs-3 center"><button class="glyphicon glyphicon-usd promotional-button" data-toggle="collapse" data-target="#promotional"></button><h4 class="promotional-title">Voyages et incitations promotionnels</h4>
+          <div class="col-xs-3 center"><button class="glyphicon glyphicon-plane promotional-button" data-toggle="collapse" data-target="#promotional"></button><h4 class="promotional-title">Voyages et incitations promotionnels</h4>
           </div>
-          <div class="col-xs-3 center"><button class="glyphicon glyphicon-usd plan-button" data-toggle="collapse" data-target="#plan"></button><h4 class="plan-title">Régime de rémunération</h4>
+          <div class="col-xs-3 center"><button class="glyphicon glyphicon-list plan-button" data-toggle="collapse" data-target="#plan"></button><h4 class="plan-title">Régime de rémunération</h4>
           </div>
         </div>
         <div class="row">
