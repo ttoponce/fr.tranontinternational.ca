@@ -410,13 +410,20 @@
       #taxbot-mobile-image {
         width: 200px;
       }
+      #taxbot-mobile-text-12 {
+        display: none;
+      }
       #text-bottom {
         margin-bottom: 15px;
       }
       #top-panel {
         margin-top: 4%;
       }
-
+      @media only screen and (max-width: 991px) {
+        #taxbot-mobile-text-9 {
+          padding-left: 100px;
+        }
+      }
       @media only screen and (max-width: 700px) {
         .col-xs-3 h4 {
           font-size: 16px;
@@ -456,6 +463,9 @@
         .col-xs-4 h4 {
           font-size: 12px;
         }
+        #taxbot-mobile-text-9 {
+          padding-top: 0;
+        }
       }
       @media only screen and (max-width: 535px) {
         .single-line {
@@ -469,6 +479,15 @@
           font-size: 15px;
           margin-top: 24%;
           letter-spacing: 5px;
+        }
+        #taxbot-mobile-image-container {
+          display: none;
+        }
+        #taxbot-mobile-text-9 {
+          display: none;
+        }
+        #taxbot-mobile-text-12 {
+          display: block;
         }
       }
       @media only screen and (max-width: 400px) {
@@ -692,12 +711,22 @@
         </div>
         <hr>
         <div class="row bottom-row">
-          <div class="col-xs-3"><img id="taxbot-mobile-image" class="center-element" src="https://s3-us-west-2.amazonaws.com/cont.training/Images/taxbot-mobile.jpg" alt="Capture d&#39;écran de l&#39;application mobile pour Taxbot"/></div>
-          <div class="col-xs-9">
+          <div class="col-xs-3" id="taxbot-mobile-image-container">
+            <img id="taxbot-mobile-image" class="center-element" src="https://s3-us-west-2.amazonaws.com/cont.training/Images/taxbot-mobile.jpg" alt="Capture d&#39;écran de l&#39;application mobile pour Taxbot"/>
+          </div>
+          <div class="col-xs-9" id="taxbot-mobile-text-9">
             <p>L&#39;application mobile s&#39;intègre au GPS de votre téléphone pour déterminer où vous êtes et où vous allez. Votre itinéraire sera automatiquement enregistré et vous pourrez catégoriser chaque voyage en voyage personnel ou voyage d&#39;affaires.</p>
             <p>Taxbot de Tranont vous permet de maximiser vos dépenses d&#39;affaires et d&#39;être soigneusement préparé au moment des impôts.</p>
             <p>S&#39;inscrire comme associé ou comme client :</p>
-            <div class="col-xs-12"><a href="https://member.tranont.com/signup/basepages/precheck.asp?selLanguage=English&Country=UNITED%20STATES" type="button" class="btn btn-default signup-button">Inscription</a></div>
+            <div class="col-xs-12">
+              <a href="https://member.tranont.com/signup" type="button" class="btn btn-default signup-button">Inscription</a>
+            </div>
+          </div>
+          <div class="col-xs-12" id="taxbot-mobile-text-12">
+            <p>L&#39;application mobile s&#39;intègre au GPS de votre téléphone pour déterminer où vous êtes et où vous allez. Votre itinéraire sera automatiquement enregistré et vous pourrez catégoriser chaque voyage en voyage personnel ou voyage d&#39;affaires.</p>
+            <p>Taxbot de Tranont vous permet de maximiser vos dépenses d&#39;affaires et d&#39;être soigneusement préparé au moment des impôts.</p>
+            <p>S&#39;inscrire comme associé ou comme client :</p>
+            <a href="https://member.tranont.com/signup" type="button" class="btn btn-default signup-button">Inscription</a>
           </div>
         </div>
       </div>
